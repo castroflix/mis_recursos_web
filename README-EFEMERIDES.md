@@ -10,17 +10,29 @@ publica nada ese día (no se inventa ni se aproxima nada).
 Coste: **0 €/mes** (GitHub Pages + GitHub Actions + nivel gratuito de
 la API de Gemini).
 
-## Regla "un día como hoy"
+## Regla de publicación (dos niveles)
 
 A diferencia del widget original (que rellenaba cada día con cualquier
-curiosidad de la temática), esta versión solo publica cuando el hecho
-ocurrió **exactamente** el día y mes de hoy en la historia de la
-informática (lanzamiento de un sistema operativo, primera versión de
-un lenguaje de programación, software o hardware icónico, nacimiento o
-fallecimiento de una figura clave, etc.). Si el modelo no tiene un
-dato verificado para esa fecha exacta, responde `{"sinEvento": true}`
-y el script no escribe nada — ese día el widget del dashboard muestra
-un mensaje de "hoy no toca" en vez de una tarjeta vacía o repetida.
+curiosidad de la temática), esta versión prioriza la precisión pero
+sin dejar demasiados días vacíos:
+
+1. **Nivel 1 (preferido)**: un hecho que ocurrió exactamente el día y
+   mes de hoy (lanzamiento de un sistema operativo, primera versión de
+   un lenguaje de programación, software o hardware icónico,
+   nacimiento o fallecimiento de una figura clave, etc.).
+2. **Nivel 2 (si no hay nada seguro para el día exacto)**: un hecho
+   igual de real y verificable pero de **cualquier otro día del mismo
+   mes**. Estas entradas se marcan con `"aproximado": true` y el
+   widget muestra una nota ("📅 Este hecho ocurrió este mismo mes, no
+   exactamente hoy") para dejarlo claro.
+3. **Nivel 3**: si no hay absolutamente nada verificado ni para el día
+   exacto ni para el resto del mes, el modelo responde
+   `{"sinEvento": true}` y el script no escribe nada — ese día el
+   widget muestra un mensaje de "hoy no toca" en vez de inventar algo
+   o repetir una efeméride de otro mes.
+
+En ningún caso se inventa un hecho ni se usa uno de un mes distinto al
+de hoy.
 
 ## Archivos que forman el sistema
 
@@ -91,10 +103,11 @@ El script hace como mucho **1 llamada al día**. El nivel gratuito de
 - Temática cambiada de "redes/hardware/cultura tech en general" a
   "informática y programación" específicamente (sistemas operativos,
   lenguajes, software, hardware).
-- Regla nueva y más estricta: solo se publica si el hecho coincide
-  realmente con el día y mes de hoy; si no hay nada verificado, no se
-  publica nada ese día (antes se publicaba cualquier curiosidad de la
-  temática aunque no coincidiera la fecha).
+- Regla nueva de dos niveles: se prioriza el día exacto de hoy, pero si
+  no hay nada seguro se admite un hecho de ese mismo mes (marcado como
+  aproximado); solo si no hay nada en todo el mes no se publica nada
+  ese día (antes se publicaba cualquier curiosidad de la temática
+  aunque no coincidiera ni el día ni el mes).
 - El frontend (`assets/js/efemerides.js`) ya no rota entre curiosidades
   de ejemplo como reserva: si no hay entrada para hoy, muestra un
   mensaje de "hoy no toca" en vez de una curiosidad de otro día.

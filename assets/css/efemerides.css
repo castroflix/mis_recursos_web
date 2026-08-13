@@ -75,6 +75,13 @@
     text-shadow: 0 0 8px rgba(0, 255, 65, 0.35);
 }
 
+.efemeride-nota {
+    margin: 0 0 0.75rem;
+    font-size: 0.8rem;
+    font-style: italic;
+    color: #ffb020;
+}
+
 .efemeride-texto {
     margin: 0 0 0.9rem;
     color: #f1f1f1;

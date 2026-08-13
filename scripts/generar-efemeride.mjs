@@ -5,11 +5,16 @@
 //   - efemerides/YYYY-MM-DD.html (ficha permanente indexable)
 //   - efemerides/index.html      (listado del archivo)
 //
-// REGLA CLAVE de esta adaptación: solo se publica si el hecho
-// ocurrió REALMENTE el día y mes de hoy (cualquier año). Si el
-// modelo no tiene un hecho verificado para esa fecha exacta,
-// responde {"sinEvento": true} y ese día simplemente no se
-// publica nada nuevo (no se inventa ni se aproxima).
+// REGLA de esta adaptación (dos niveles):
+//   1. Se prioriza un hecho que ocurrió REALMENTE el día y mes
+//      exactos de hoy (cualquier año).
+//   2. Si no hay ninguno verificado para el día exacto, se admite
+//      un hecho de ese MISMO MES (cualquier día del mes, cualquier
+//      año), marcado como "aproximado": true, para no dejar tantos
+//      días sin nada.
+//   3. Solo si tampoco hay nada verificado en todo el mes, el
+//      modelo responde {"sinEvento": true} y ese día no se publica
+//      nada (nunca se inventa ni se aproxima más allá del mes).
 //
 // Se ejecuta desde .github/workflows/efemeride-diaria.yml
 // Requiere la variable de entorno GEMINI_API_KEY.
@@ -51,8 +56,14 @@ async function cargarJSON(ruta, porDefecto) {
   }
 }
 
+const NOMBRES_MES = [
+  "enero", "febrero", "marzo", "abril", "mayo", "junio",
+  "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"
+];
+
 function construirPrompt(config, fechaISO, historial) {
   const [, mes, dia] = fechaISO.split("-");
+  const nombreMes = NOMBRES_MES[parseInt(mes, 10) - 1];
   const titulosPrevios = historial
     .slice(-60)
     .map((e) => e.titulo)
@@ -62,16 +73,23 @@ function construirPrompt(config, fechaISO, historial) {
 Temática exclusiva: ${config.tematica}.
 Categorías permitidas (usa EXACTAMENTE una de estas, tal cual está escrita): ${config.categorias.join(", ")}.
 
-Busca UN hecho real y verificable de la historia de la informática y la programación que haya ocurrido EXACTAMENTE el día ${dia} del mes ${mes} (en cualquier año, sin importar cuál). Ejemplos válidos: el lanzamiento de un sistema operativo o de una versión concreta de un lenguaje de programación, la salida al mercado de un software o dispositivo icónico, el nacimiento o fallecimiento de una figura clave de la computación, la fundación de una empresa tecnológica relevante, etc.
+Busca UN hecho real y verificable de la historia de la informática y la programación siguiendo este orden de prioridad:
+
+NIVEL 1 (preferido): un hecho que ocurriera EXACTAMENTE el día ${dia} del mes ${nombreMes} (en cualquier año). Ejemplos válidos: el lanzamiento de un sistema operativo o de una versión concreta de un lenguaje de programación, la salida al mercado de un software o dispositivo icónico, el nacimiento o fallecimiento de una figura clave de la computación, la fundación de una empresa tecnológica relevante, etc.
+
+NIVEL 2 (si no hay nada seguro para el día ${dia} exacto): un hecho igual de real y verificable que ocurriera en cualquier OTRO día del mismo mes de ${nombreMes} (cualquier año, cualquier día del mes, pero ese mes sí o sí). En ese caso marca el campo "aproximado" como true.
+
+NIVEL 3 (solo si no hay NADA verificado ni para el día exacto ni para el resto del mes de ${nombreMes}): responde EXACTAMENTE {"sinEvento": true} y nada más, sin ningún otro texto. No bajes de nivel 2 a inventar algo de otro mes.
 
 Reglas MUY importantes:
-- Solo vale un hecho que ocurriera de verdad ese día Y ese mes exactos (el año da igual cuál sea). No sirve "por esas fechas" ni "ese mismo mes"; tiene que ser el día ${dia} concreto.
-- Si no conoces con certeza ningún hecho verificado para el día ${dia} de ${mes} dentro de esta temática, NO inventes ni aproximes: responde EXACTAMENTE {"sinEvento": true} y nada más, sin ningún otro texto.
+- Prioriza siempre el nivel 1 sobre el nivel 2; usa el nivel 2 solo si de verdad no encuentras nada fiable para el día ${dia} concreto.
+- El hecho tiene que caer dentro del mes de ${nombreMes}, sea del nivel que sea. Nunca seleccione un hecho de un mes distinto.
+- Si dudas de un dato concreto (fecha exacta, cifra, nombre), no lo publiques: pasa al nivel siguiente en vez de arriesgarte a inventar.
 - No repitas ninguno de estos títulos ya usados: ${titulosPrevios.length ? titulosPrevios.join(" | ") : "(ninguno todavía)"}.
-- Si dudas de un dato concreto (fecha exacta, cifra, nombre), no lo publiques: usa {"sinEvento": true} en su lugar.
 - Evita temas de normativa, legislación o polémicas — mantén un tono divulgativo y de bajo riesgo.
 - La categoría debe ser EXACTAMENTE una de las categorías permitidas listadas arriba.
 - El campo "anio" debe ser el año en que ocurrió el hecho (como texto, p. ej. "1991").
+- El campo "aproximado" debe ser el booleano false si el hecho es del nivel 1 (día ${dia} exacto), o el booleano true si es del nivel 2 (mismo mes, otro día).
 - Responde SOLO con un objeto JSON, sin texto adicional, sin bloques de código markdown, con esta forma exacta:
 
 {
@@ -79,12 +97,13 @@ Reglas MUY importantes:
   "anio": "año en que ocurrió",
   "titulo": "título breve y atractivo, sin punto final",
   "texto": "2-4 frases explicando el hecho, en ${config.idioma}, tono cercano y divulgativo",
-  "fuentes": [{ "nombre": "nombre de la fuente", "url": "https://..." }]
+  "fuentes": [{ "nombre": "nombre de la fuente", "url": "https://..." }],
+  "aproximado": false
 }
 
 Si no puedes citar una fuente real y verificable, deja "fuentes" como un array vacío [] en vez de inventar una URL.
 
-Recuerda: si no hay ningún hecho real y verificado para el día ${dia} de ${mes} dentro de esta temática, responde solo con {"sinEvento": true}.`;
+Recuerda el orden: primero intenta el día ${dia} de ${nombreMes} exacto: si no hay nada fiable, prueba con cualquier otro día de ${nombreMes} y marca "aproximado": true; solo si no hay absolutamente nada fiable en todo ${nombreMes}, responde {"sinEvento": true}.`;
 }
 
 async function llamarGemini(config, prompt) {
@@ -134,6 +153,7 @@ function validarEntrada(entrada, config) {
   if (!Array.isArray(entrada.fuentes)) {
     entrada.fuentes = [];
   }
+  entrada.aproximado = entrada.aproximado === true;
   return entrada;
 }
 
@@ -166,6 +186,9 @@ async function escribirFichaDelDia(config, entrada, fechaISO) {
   });
 
   const tituloConAnio = `${entrada.titulo} (${entrada.anio})`;
+  const notaAproximado = entrada.aproximado
+    ? `<p class="efemeride-nota">📅 Este hecho ocurrió este mismo mes, no exactamente el día de hoy.</p>`
+    : "";
 
   const html = plantilla
     .replaceAll("{{NOMBRE_SITIO}}", escaparHTML(config.nombreSitio))
@@ -176,6 +199,7 @@ async function escribirFichaDelDia(config, entrada, fechaISO) {
     .replaceAll("{{TITULO}}", escaparHTML(tituloConAnio))
     .replaceAll("{{TITULO_PLANO}}", escaparHTML(entrada.titulo))
     .replaceAll("{{TEXTO}}", escaparHTML(entrada.texto))
+    .replaceAll("{{NOTA_APROXIMADO}}", notaAproximado)
     .replaceAll("{{FUENTES_HTML}}", renderFuentesHTML(entrada.fuentes));
 
   const rutaFicha = path.join(ROOT, "efemerides", `${fechaISO}.html`);
@@ -198,6 +222,9 @@ async function actualizarIndiceArchivo(config, entrada, fechaISO) {
     year: "numeric"
   });
   const tituloConAnio = `${entrada.titulo} (${entrada.anio})`;
+  const etiquetaCategoria = entrada.aproximado
+    ? `${escaparHTML(entrada.categoria)} · aprox.`
+    : escaparHTML(entrada.categoria);
 
   // El marcador se mantiene siempre justo antes de la lista de entradas,
   // así que insertar "marcador + nueva fila" en su lugar hace que la
@@ -207,7 +234,7 @@ async function actualizarIndiceArchivo(config, entrada, fechaISO) {
             <a href="${fechaISO}.html">
                 <span class="archivo-fecha">${fechaLegible}</span>
                 <span class="archivo-titulo">${escaparHTML(tituloConAnio)}</span>
-                <span class="archivo-categoria">${escaparHTML(entrada.categoria)}</span>
+                <span class="archivo-categoria">${etiquetaCategoria}</span>
             </a>
         </li>`;
 

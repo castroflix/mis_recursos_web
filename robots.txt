@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://castroflix.github.io/mis_recursos_web/sitemap.xml

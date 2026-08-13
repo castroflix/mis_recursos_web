@@ -9,12 +9,17 @@
 // Formato de cada entrada del JSON:
 // { categoria, anio, titulo, texto, fuentes: [{ nombre, url }], fecha }
 //
-// REGLA "UN DÍA COMO HOY": el widget solo pinta una efeméride si
-// existe una entrada cuyo campo "fecha" (YYYY-MM-DD) coincide
-// exactamente con la fecha de hoy. Si el generador no encontró
-// ningún hecho verificado para hoy, no hay entrada con la fecha
-// de hoy y se muestra un mensaje de "hoy no toca" en vez de
-// inventar algo o mostrar una efeméride de otro día.
+// REGLA de publicación (se decide en scripts/generar-efemeride.mjs,
+// no aquí): se prioriza un hecho del día exacto de hoy; si no hay
+// ninguno verificado, se admite uno de este mismo mes (marcado con
+// "aproximado": true); si tampoco hay nada en todo el mes, no se
+// publica nada ese día.
+//
+// El widget solo pinta una efeméride si existe una entrada cuyo
+// campo "fecha" (YYYY-MM-DD) coincide exactamente con la fecha de
+// hoy (esa es la fecha en que se PUBLICÓ, no necesariamente la
+// fecha exacta del hecho histórico si es aproximada). Si no hay
+// ninguna entrada para hoy, se muestra un mensaje de "hoy no toca".
 //
 // NOTA: como usamos fetch(), esta sección requiere que la web se
 // sirva por http(s) (GitHub Pages, un servidor local, etc.); no
@@ -45,6 +50,14 @@ function pintarEfemeride(entrada) {
   document.getElementById("efemerideCategoria").textContent = entrada.categoria;
   document.getElementById("efemerideTitulo").textContent = `${entrada.titulo} (${entrada.anio})`;
   document.getElementById("efemerideTexto").textContent = entrada.texto;
+
+  const notaEl = document.getElementById("efemerideNota");
+  if (notaEl) {
+    notaEl.textContent = entrada.aproximado
+      ? "📅 Este hecho ocurrió este mismo mes, no exactamente hoy."
+      : "";
+    notaEl.classList.toggle("oculto", !entrada.aproximado);
+  }
 
   const fuentesEl = document.getElementById("efemerideFuentes");
   if (fuentesEl) {
@@ -78,7 +91,13 @@ function mostrarSinEventoHoy() {
   document.getElementById("efemerideCategoria").textContent = "";
   document.getElementById("efemerideTitulo").textContent = "Hoy no toca ninguna efeméride 🙃";
   document.getElementById("efemerideTexto").textContent =
-    "No tenemos ningún hito verificado de la historia de la informática para el día de hoy exacto. Vuelve mañana, o echa un vistazo al archivo completo de curiosidades ya publicadas.";
+    "No tenemos ningún hito verificado de la historia de la informática para hoy ni para el resto de este mes. Vuelve mañana, o echa un vistazo al archivo completo de curiosidades ya publicadas.";
+
+  const notaEl = document.getElementById("efemerideNota");
+  if (notaEl) {
+    notaEl.textContent = "";
+    notaEl.classList.add("oculto");
+  }
 
   const fuentesEl = document.getElementById("efemerideFuentes");
   if (fuentesEl) fuentesEl.innerHTML = "";

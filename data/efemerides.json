@@ -5,10 +5,7 @@
     "titulo": "Linus Torvalds anuncia el núcleo Linux",
     "texto": "Un estudiante finlandés de 21 años publicó en un foro de Usenet que estaba creando 'un sistema operativo (gratuito) para clones de AT 386, solo como hobby, no va a ser grande ni profesional'. Ese hobby es hoy el núcleo que mueve la inmensa mayoría de servidores, Android y buena parte de internet.",
     "fuentes": [
-      {
-        "nombre": "kernel.org",
-        "url": "https://www.kernel.org/"
-      }
+      { "nombre": "kernel.org", "url": "https://www.kernel.org/" }
     ],
     "fecha": "2026-01-01"
   },
@@ -27,18 +24,5 @@
     "texto": "A principios de la década de 2010, la caída de precios de las memorias flash NAND hizo que sustituir un disco duro mecánico por un SSD se convirtiera en la mejora más rentable para 'revivir' un ordenador antiguo: mismos componentes, arranque varias veces más rápido.",
     "fuentes": [],
     "fecha": "2026-01-03"
-  },
-  {
-    "categoria": "Software y aplicaciones",
-    "anio": "1996",
-    "titulo": "Microsoft lanza Internet Explorer 3.0",
-    "texto": "El 13 de agosto de 1996, Microsoft lanzó Internet Explorer 3.0, una versión decisiva en la primera 'guerra de los navegadores'. Fue el primer navegador comercial relevante en añadir soporte para hojas de estilo en cascada (CSS), JScript y controles ActiveX. Su llegada marcó el inicio del dominio de Microsoft en la red frente al emblemático Netscape Navigator.",
-    "fuentes": [
-      {
-        "nombre": "Wikipedia - Internet Explorer 3",
-        "url": "https://es.wikipedia.org/wiki/Internet_Explorer_3"
-      }
-    ],
-    "fecha": "2026-08-13"
   }
 ]
