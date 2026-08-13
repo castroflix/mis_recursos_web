@@ -1,0 +1,28 @@
+[
+  {
+    "categoria": "Sistemas operativos",
+    "anio": "1991",
+    "titulo": "Linus Torvalds anuncia el núcleo Linux",
+    "texto": "Un estudiante finlandés de 21 años publicó en un foro de Usenet que estaba creando 'un sistema operativo (gratuito) para clones de AT 386, solo como hobby, no va a ser grande ni profesional'. Ese hobby es hoy el núcleo que mueve la inmensa mayoría de servidores, Android y buena parte de internet.",
+    "fuentes": [
+      { "nombre": "kernel.org", "url": "https://www.kernel.org/" }
+    ],
+    "fecha": "2026-01-01"
+  },
+  {
+    "categoria": "Lenguajes de programación",
+    "anio": "1995",
+    "titulo": "Netscape presenta JavaScript",
+    "texto": "Brendan Eich diseñó el lenguaje en apenas diez días para Netscape Navigator. Pensado en un principio como un simple complemento para animar páginas, acabó convirtiéndose en el lenguaje más usado del mundo, tanto en el navegador como en el servidor con Node.js.",
+    "fuentes": [],
+    "fecha": "2026-01-02"
+  },
+  {
+    "categoria": "Hardware e historia de la computación",
+    "anio": "2010",
+    "titulo": "Los SSD empiezan a democratizarse",
+    "texto": "A principios de la década de 2010, la caída de precios de las memorias flash NAND hizo que sustituir un disco duro mecánico por un SSD se convirtiera en la mejora más rentable para 'revivir' un ordenador antiguo: mismos componentes, arranque varias veces más rápido.",
+    "fuentes": [],
+    "fecha": "2026-01-03"
+  }
+]

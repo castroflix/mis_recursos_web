@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/efemerides.css">
 </head>
 
 <body>
@@ -49,6 +50,21 @@
                 placeholder="🔍 Buscar recurso (ej: iconos, fuentes, IA...)" aria-label="Buscar recurso">
             <p id="resultadosContador"></p>
         </div>
+
+        <!-- SECCION Efemérides: "¿Sabías que...?" -->
+        <section class="efemeride-container">
+            <h2 class="efemeride-heading">💾 ¿Sabías que...?</h2>
+            <article class="efemeride-card" id="efemerideCard">
+                <div class="efemeride-meta">
+                    <span class="efemeride-fecha" id="efemerideFecha"></span>
+                    <span class="efemeride-categoria" id="efemerideCategoria"></span>
+                </div>
+                <h3 class="efemeride-titulo" id="efemerideTitulo"></h3>
+                <p class="efemeride-texto" id="efemerideTexto"></p>
+                <p class="efemeride-fuentes" id="efemerideFuentes"></p>
+                <a href="efemerides/" class="efemeride-enlace">Ver todas las efemérides →</a>
+            </article>
+        </section>
 
         <!-- SECCION Tutoriales y Validación -->
 
@@ -81,8 +97,8 @@
                         <h5>Validador HTML (W3C)</h5>
                         <p class="card-text small">Herramienta para validar tu código por subida de archivo.
                         </p>
-                        <a href="https://validator.w3.org/?authuser=0#validate_by_upload" target="_blank" rel="noopener noreferrer"
-                            class="btn btn-primary btn-sm w-100">Validar</a>
+                        <a href="https://validator.w3.org/?authuser=0#validate_by_upload" target="_blank"
+                            rel="noopener noreferrer" class="btn btn-primary btn-sm w-100">Validar</a>
                     </div>
                 </div>
             </div>
@@ -91,8 +107,8 @@
                     <div class="card-body">
                         <h5>Validador CSS (W3C)</h5>
                         <p class="card-text small">Servicio de validación de hojas de estilo CSS de la W3C.</p>
-                        <a href="https://jigsaw.w3.org/css-validator/?authuser=0" target="_blank" rel="noopener noreferrer"
-                            class="btn btn-primary btn-sm w-100">Validar</a>
+                        <a href="https://jigsaw.w3.org/css-validator/?authuser=0" target="_blank"
+                            rel="noopener noreferrer" class="btn btn-primary btn-sm w-100">Validar</a>
                     </div>
                 </div>
             </div>
@@ -102,7 +118,8 @@
                         <h5>Word to HTML</h5>
                         <p class="card-text small">Convierte documentos de Word y texto enriquecido a código HTML limpio
                             al instante.</p>
-                        <a href="https://wordtohtml.net/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm w-100">Visitar
+                        <a href="https://wordtohtml.net/" target="_blank" rel="noopener noreferrer"
+                            class="btn btn-primary btn-sm w-100">Visitar
                             Word to HTML</a>
                     </div>
                 </div>
@@ -197,8 +214,8 @@
                     <div class="card-body">
                         <h5>Free Frontend</h5>
                         <p class="card-text small">Colección de patrones de fondo en CSS.</p>
-                        <a href="https://freefrontend.com/css-background-patterns" target="_blank" rel="noopener noreferrer"
-                            class="btn btn-outline-light btn-sm w-100">Visitar</a>
+                        <a href="https://freefrontend.com/css-background-patterns" target="_blank"
+                            rel="noopener noreferrer" class="btn btn-outline-light btn-sm w-100">Visitar</a>
                     </div>
                 </div>
             </div>
@@ -241,8 +258,8 @@
                     <div class="card-body">
                         <h5>SVG Wave Gen</h5>
                         <p class="card-text small">Herramienta de Softr para generar ondas personalizadas.</p>
-                        <a href="https://www.softr.io/tools/svg-wave-generator" target="_blank" rel="noopener noreferrer"
-                            class="btn btn-outline-light btn-sm w-100">Visitar</a>
+                        <a href="https://www.softr.io/tools/svg-wave-generator" target="_blank"
+                            rel="noopener noreferrer" class="btn btn-outline-light btn-sm w-100">Visitar</a>
                     </div>
                 </div>
             </div>
@@ -263,8 +280,8 @@
                     <div class="card-body">
                         <h5>SVG Gen Guide</h5>
                         <p class="card-text small">Recopilación de Smashing Magazine sobre generadores SVG.</p>
-                        <a href="https://www.smashingmagazine.com/2021/03/svg-generators/" target="_blank" rel="noopener noreferrer"
-                            class="btn btn-outline-light btn-sm w-100">Visitar</a>
+                        <a href="https://www.smashingmagazine.com/2021/03/svg-generators/" target="_blank"
+                            rel="noopener noreferrer" class="btn btn-outline-light btn-sm w-100">Visitar</a>
                     </div>
                 </div>
             </div>
@@ -467,7 +484,8 @@
                         <h5>Ezgif</h5>
                         <p class="card-text small">Conjunto de herramientas online para crear, editar y optimizar GIFs y
                             vídeos.</p>
-                        <a href="https://ezgif.com/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light btn-sm w-100">Visitar
+                        <a href="https://ezgif.com/" target="_blank" rel="noopener noreferrer"
+                            class="btn btn-outline-light btn-sm w-100">Visitar
                             Ezgif</a>
                     </div>
                 </div>
@@ -628,8 +646,8 @@
                         <h5>Campaign URL Builder</h5>
                         <p class="card-text small">Generador oficial de Google Analytics para crear URLs con parámetros
                             UTM de seguimiento web, analítica y campañas de marketing.</p>
-                        <a href="https://ga-dev-tools.google/campaign-url-builder/" target="_blank" rel="noopener noreferrer"
-                            class="btn btn-outline-light btn-sm w-100">Visitar</a>
+                        <a href="https://ga-dev-tools.google/campaign-url-builder/" target="_blank"
+                            rel="noopener noreferrer" class="btn btn-outline-light btn-sm w-100">Visitar</a>
                     </div>
                 </div>
             </div>
@@ -680,7 +698,8 @@
                         <h5>Fontjoy</h5>
                         <p class="card-text small">Usa IA para generar combinaciones de fuentes perfectas para tus
                             proyectos.</p>
-                        <a href="https://fontjoy.com/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light btn-sm w-100">Ver
+                        <a href="https://fontjoy.com/" target="_blank" rel="noopener noreferrer"
+                            class="btn btn-outline-light btn-sm w-100">Ver
                             Fuentes</a>
                     </div>
                 </div>
@@ -705,7 +724,8 @@
                         <p class="card-text small">Extensión de navegador para identificar qué fuente usa cualquier web.
                         </p>
                         <a href="https://chrome.google.com/webstore/detail/whatfont/jabpfojeloaigpbbbhcaavhghacmsome"
-                            target="_blank" rel="noopener noreferrer" class="btn btn-outline-light btn-sm w-100">Ver Extensión</a>
+                            target="_blank" rel="noopener noreferrer" class="btn btn-outline-light btn-sm w-100">Ver
+                            Extensión</a>
                     </div>
                 </div>
             </div>
@@ -758,7 +778,8 @@
                         <h5>Midjourney</h5>
                         <p class="card-text small">Laboratorio de investigación que genera imágenes
                             artísticas de alta calidad a partir de texto.</p>
-                        <a href="https://www.midjourney.com/home" target="_blank" rel="noopener noreferrer" class="btn btn-light btn-sm w-100">Ir
+                        <a href="https://www.midjourney.com/home" target="_blank" rel="noopener noreferrer"
+                            class="btn btn-light btn-sm w-100">Ir
                             a Midjourney</a>
                     </div>
                 </div>
@@ -770,7 +791,8 @@
                         <h5>OpenArt AI</h5>
                         <p class="card-text small">Plataforma creativa para generar arte digital diverso
                             utilizando modelos como DALL-E y Stable Diffusion.</p>
-                        <a href="https://openart.ai/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-success btn-sm w-100">Ir a
+                        <a href="https://openart.ai/" target="_blank" rel="noopener noreferrer"
+                            class="btn btn-outline-success btn-sm w-100">Ir a
                             OpenArt</a>
                     </div>
                 </div>
@@ -782,8 +804,8 @@
                         <h5>Adobe Firefly</h5>
                         <p class="card-text small">Modelos generativos de Adobe centrados en la creación de
                             imágenes y efectos de texto profesionales.</p>
-                        <a href="https://www.adobe.com/es/products/firefly.html" target="_blank" rel="noopener noreferrer"
-                            class="btn btn-outline-danger btn-sm w-100">Ir a Firefly</a>
+                        <a href="https://www.adobe.com/es/products/firefly.html" target="_blank"
+                            rel="noopener noreferrer" class="btn btn-outline-danger btn-sm w-100">Ir a Firefly</a>
                     </div>
                 </div>
             </div>
@@ -806,8 +828,8 @@
                         <h5>Runway Gen-4</h5>
                         <p class="card-text small ">Herramienta de vídeo generativo que permite crear clips
                             realistas y consistentes con IA.</p>
-                        <a href="https://runwayml.com/research/introducing-runway-gen-4" target="_blank" rel="noopener noreferrer"
-                            class="btn btn-outline-secondary btn-sm w-100">Ir a Gen-4</a>
+                        <a href="https://runwayml.com/research/introducing-runway-gen-4" target="_blank"
+                            rel="noopener noreferrer" class="btn btn-outline-secondary btn-sm w-100">Ir a Gen-4</a>
                     </div>
                 </div>
             </div>
@@ -818,7 +840,8 @@
                         <h5>Leonardo.ai</h5>
                         <p class="card-text small ">Plataforma para crear imágenes con modelos preentrenados o
                             personalizados de gran control creativo.</p>
-                        <a href="https://leonardo.ai/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-warning btn-sm w-100">Ir a
+                        <a href="https://leonardo.ai/" target="_blank" rel="noopener noreferrer"
+                            class="btn btn-outline-warning btn-sm w-100">Ir a
                             Leonardo</a>
                     </div>
                 </div>
@@ -829,7 +852,8 @@
                         <h5>Ideogram AI</h5>
                         <p class="card-text small">Generador de imágenes con IA destacado por su renderizado
                             preciso de texto dentro de las imágenes (logos, carteles, posters).</p>
-                        <a href="https://ideogram.ai/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-warning btn-sm w-100">Ir a
+                        <a href="https://ideogram.ai/" target="_blank" rel="noopener noreferrer"
+                            class="btn btn-outline-warning btn-sm w-100">Ir a
                             Ideogram</a>
                     </div>
                 </div>
@@ -851,7 +875,8 @@
                         <h5>Civitai</h5>
                         <p class="card-text small">Plataforma de modelos de IA de código abierto, LoRAs y prompts para
                             generación de imágenes y arte digital.</p>
-                        <a href="https://civitai.com/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-warning btn-sm w-100">Ir a
+                        <a href="https://civitai.com/" target="_blank" rel="noopener noreferrer"
+                            class="btn btn-outline-warning btn-sm w-100">Ir a
                             Civitai</a>
                     </div>
                 </div>
@@ -870,7 +895,8 @@
                         <h5>Cursor</h5>
                         <p class="card-text small ">El editor de código con IA que entiende todo tu
                             repositorio y escribe funciones completas.</p>
-                        <a href="https://cursor.com/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-info btn-sm w-100">Probar
+                        <a href="https://cursor.com/" target="_blank" rel="noopener noreferrer"
+                            class="btn btn-outline-info btn-sm w-100">Probar
                             Cursor</a>
                     </div>
                 </div>
@@ -906,7 +932,8 @@
                         <h5>v0 by Vercel</h5>
                         <p class="card-text small ">IA especializada en Frontend. Genera componentes de React
                             y Tailwind CSS en segundos con solo pedirlos.</p>
-                        <a href="https://v0.dev/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-warning btn-sm w-100">Probar
+                        <a href="https://v0.dev/" target="_blank" rel="noopener noreferrer"
+                            class="btn btn-outline-warning btn-sm w-100">Probar
                             v0</a>
                     </div>
                 </div>
@@ -929,7 +956,8 @@
                         <h5>Bolt.new</h5>
                         <p class="card-text small">Genera apps web completas a partir de un prompt, directo en el
                             navegador.</p>
-                        <a href="https://bolt.new/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-info btn-sm w-100">Probar
+                        <a href="https://bolt.new/" target="_blank" rel="noopener noreferrer"
+                            class="btn btn-outline-info btn-sm w-100">Probar
                             Bolt.new</a>
                     </div>
                 </div>
@@ -940,7 +968,8 @@
                         <h5>Replit AI</h5>
                         <p class="card-text small">IDE online con IA integrada, plan gratuito para proyectos pequeños.
                         </p>
-                        <a href="https://replit.com/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-danger btn-sm w-100">Probar
+                        <a href="https://replit.com/" target="_blank" rel="noopener noreferrer"
+                            class="btn btn-outline-danger btn-sm w-100">Probar
                             Replit</a>
                     </div>
                 </div>
@@ -1068,7 +1097,8 @@
                         <h5>Suno</h5>
                         <p class="card-text small">Genera música completa con IA a partir de texto, con plan gratuito
                             mensual.</p>
-                        <a href="https://suno.com/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm w-100">Probar
+                        <a href="https://suno.com/" target="_blank" rel="noopener noreferrer"
+                            class="btn btn-outline-primary btn-sm w-100">Probar
                             Suno</a>
                     </div>
                 </div>
@@ -1097,7 +1127,8 @@
                         <h5>Gamma App</h5>
                         <p class="card-text small">Una IA que crea presentaciones, documentos o páginas web completas en
                             segundos a partir de un texto.</p>
-                        <a href="https://gamma.app/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm w-100">Probar
+                        <a href="https://gamma.app/" target="_blank" rel="noopener noreferrer"
+                            class="btn btn-outline-primary btn-sm w-100">Probar
                             Gamma</a>
                     </div>
                 </div>
@@ -1138,6 +1169,7 @@
         })();
     </script>
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/efemerides.js"></script>
 </body>
 
 </html>

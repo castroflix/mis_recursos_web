@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{TITULO}} — {{NOMBRE_SITIO}}</title>
+    <meta name="description" content="{{TEXTO}}">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="{{URL_SITIO}}efemerides/{{FECHA_ISO}}.html">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/efemerides.css">
+
+    <meta property="og:title" content="{{TITULO}} — {{NOMBRE_SITIO}}">
+    <meta property="og:description" content="{{TEXTO}}">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="{{URL_SITIO}}efemerides/{{FECHA_ISO}}.html">
+</head>
+
+<body>
+    <div class="ficha-wrap">
+        <a class="ficha-volver" href="index.html">← Volver al archivo de efemérides</a>
+
+        <article class="efemeride-card">
+            <div class="efemeride-meta">
+                <span class="efemeride-fecha">{{FECHA_LEGIBLE}}</span>
+                <span class="efemeride-categoria">{{CATEGORIA}}</span>
+            </div>
+            <h1 class="efemeride-titulo">{{TITULO}}</h1>
+            <p class="efemeride-texto">{{TEXTO}}</p>
+            {{FUENTES_HTML}}
+        </article>
+    </div>
+</body>
+
+</html>
