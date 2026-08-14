@@ -41,5 +41,19 @@
     ],
     "aproximado": false,
     "fecha": "2026-08-13"
+  },
+  {
+    "categoria": "Software y aplicaciones",
+    "anio": "2013",
+    "titulo": "Lanzamiento de Telegram en iOS",
+    "texto": "El 14 de agosto de 2013 se publicó en la App Store la primera versión oficial de Telegram para dispositivos iOS. Desarrollada por los hermanos Nikolái y Pável Dúrov tras fundar VK, la plataforma de mensajería instantánea nació con un fuerte énfasis en la velocidad, el almacenamiento en la nube y el cifrado mediante su protocolo propio MTProto.",
+    "fuentes": [
+      {
+        "nombre": "Telegram FAQ",
+        "url": "https://telegram.org/faq"
+      }
+    ],
+    "aproximado": false,
+    "fecha": "2026-08-14"
   }
 ]
