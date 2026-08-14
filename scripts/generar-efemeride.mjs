@@ -106,31 +106,51 @@ Si no puedes citar una fuente real y verificable, deja "fuentes" como un array v
 Recuerda el orden: primero intenta el día ${dia} de ${nombreMes} exacto: si no hay nada fiable, prueba con cualquier otro día de ${nombreMes} y marca "aproximado": true; solo si no hay absolutamente nada fiable en todo ${nombreMes}, responde {"sinEvento": true}.`;
 }
 
-async function llamarGemini(config, prompt) {
+function esperar(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+// Códigos de error transitorios en los que tiene sentido reintentar
+// (saturación del modelo, rate limit, errores puntuales del servidor).
+const CODIGOS_REINTENTABLES = new Set([429, 500, 503, 504]);
+
+async function llamarGemini(config, prompt, intentosMax = 4) {
   const url = `https://generativelanguage.googleapis.com/v1beta/models/${config.modelo}:generateContent?key=${API_KEY}`;
 
-  const respuesta = await fetch(url, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({
-      contents: [{ parts: [{ text: prompt }] }],
-      generationConfig: {
-        temperature: 0.4,
-        responseMimeType: "application/json"
-      }
-    })
-  });
+  for (let intento = 1; intento <= intentosMax; intento++) {
+    const respuesta = await fetch(url, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        contents: [{ parts: [{ text: prompt }] }],
+        generationConfig: {
+          temperature: 0.4,
+          responseMimeType: "application/json"
+        }
+      })
+    });
 
-  if (!respuesta.ok) {
+    if (respuesta.ok) {
+      const datos = await respuesta.json();
+      const texto = datos?.candidates?.[0]?.content?.parts?.[0]?.text;
+      if (!texto) throw new Error("Respuesta de Gemini sin contenido de texto.");
+      return texto;
+    }
+
     const cuerpo = await respuesta.text();
-    throw new Error(`Error de la API de Gemini (${respuesta.status}): ${cuerpo}`);
+    const esReintentable = CODIGOS_REINTENTABLES.has(respuesta.status);
+
+    if (!esReintentable || intento === intentosMax) {
+      throw new Error(`Error de la API de Gemini (${respuesta.status}): ${cuerpo}`);
+    }
+
+    // Backoff exponencial con jitter: 2s, 4s, 8s... + hasta 500ms aleatorios
+    const espera = 2000 * 2 ** (intento - 1) + Math.floor(Math.random() * 500);
+    console.warn(
+      `Gemini devolvió ${respuesta.status} (intento ${intento}/${intentosMax}). Reintentando en ${espera}ms...`
+    );
+    await esperar(espera);
   }
-
-  const datos = await respuesta.json();
-  const texto = datos?.candidates?.[0]?.content?.parts?.[0]?.text;
-  if (!texto) throw new Error("Respuesta de Gemini sin contenido de texto.");
-
-  return texto;
 }
 
 function limpiarYParsear(textoBruto) {
