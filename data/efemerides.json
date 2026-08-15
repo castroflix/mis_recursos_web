@@ -55,5 +55,19 @@
     ],
     "aproximado": false,
     "fecha": "2026-08-14"
+  },
+  {
+    "categoria": "Hardware e historia de la computación",
+    "anio": "1998",
+    "titulo": "Apple pone a la venta el icónico iMac G3",
+    "texto": "El 15 de agosto de 1998 salió al mercado el iMac G3, el revolucionario ordenador todo en uno que consolidó el regreso de Steve Jobs a la dirección de Apple. Su llamativo diseño translúcido en color azul Bondi, junto con la arriesgada decisión de prescindir de la disquetera a favor de los puertos USB y la conexión a Internet sencilla, transformó la estética y funcionalidad de la informática personal.",
+    "fuentes": [
+      {
+        "nombre": "Wired",
+        "url": "https://www.wired.com/2010/08/0815imac-goes-on-sale/"
+      }
+    ],
+    "aproximado": false,
+    "fecha": "2026-08-15"
   }
 ]
