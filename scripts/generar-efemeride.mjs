@@ -28,6 +28,7 @@ const CONFIG_PATH = path.join(ROOT, "config", "site.json");
 const DATA_PATH = path.join(ROOT, "data", "efemerides.json");
 const TEMPLATE_PATH = path.join(ROOT, "efemerides", "_template.html");
 const ARCHIVE_INDEX_PATH = path.join(ROOT, "efemerides", "index.html");
+const SITEMAP_PATH = path.join(ROOT, "sitemap.xml");
 
 const API_KEY = process.env.GEMINI_API_KEY;
 if (!API_KEY) {
@@ -185,6 +186,13 @@ function escaparHTML(texto) {
     .replaceAll('"', "&quot;");
 }
 
+function escaparXML(texto) {
+  return String(texto)
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;");
+}
+
 function renderFuentesHTML(fuentes) {
   if (!fuentes || fuentes.length === 0) return "";
   const enlaces = fuentes
@@ -267,6 +275,37 @@ async function actualizarIndiceArchivo(config, entrada, fechaISO) {
   }
 }
 
+async function actualizarSitemap(config, fechaISO) {
+  let sitemapXML;
+  try {
+    sitemapXML = await readFile(SITEMAP_PATH, "utf-8");
+  } catch {
+    sitemapXML = null;
+  }
+  if (!sitemapXML) return; // si no existe sitemap.xml, no hacemos nada
+
+  const urlFicha = `${config.urlSitio}efemerides/${fechaISO}.html`;
+
+  // Igual que en el índice del archivo: el marcador se mantiene siempre
+  // justo antes de cerrar </urlset>, así que insertar "marcador + nueva
+  // entrada <url>" en su lugar añade cada ficha nueva sin duplicar nada.
+  const nuevaEntrada = `  <!-- MARCADOR_NUEVA_ENTRADA -->
+  <url>
+    <loc>${escaparXML(urlFicha)}</loc>
+    <lastmod>${fechaISO}</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>`;
+
+  if (sitemapXML.includes("<!-- MARCADOR_NUEVA_ENTRADA -->")) {
+    sitemapXML = sitemapXML.replace("<!-- MARCADOR_NUEVA_ENTRADA -->", nuevaEntrada);
+    await writeFile(SITEMAP_PATH, sitemapXML, "utf-8");
+    console.log(`sitemap.xml actualizado con efemerides/${fechaISO}.html`);
+  } else {
+    console.warn("No se encontró el marcador en sitemap.xml; no se insertó la URL nueva.");
+  }
+}
+
 async function main() {
   const config = await cargarJSON(CONFIG_PATH, null);
   if (!config) throw new Error("No se encontró config/site.json");
@@ -297,6 +336,7 @@ async function main() {
 
   await escribirFichaDelDia(config, entrada, fechaISO);
   await actualizarIndiceArchivo(config, entrada, fechaISO);
+  await actualizarSitemap(config, fechaISO);
 }
 
 main().catch((err) => {
