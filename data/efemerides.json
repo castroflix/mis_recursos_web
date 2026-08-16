@@ -69,5 +69,19 @@
     ],
     "aproximado": false,
     "fecha": "2026-08-15"
+  },
+  {
+    "categoria": "Sistemas operativos",
+    "anio": "1993",
+    "titulo": "Ian Murdock funda el proyecto Debian",
+    "texto": "El 16 de agosto de 1993, Ian Murdock anunció oficialmente la creación de Debian, una distribución de GNU/Linux guiada por principios estrictos de software libre y gobernanza comunitaria. Con el paso de las décadas, Debian se convirtió en una de las bases más sólidas e influyentes del ecosistema tecnológico, sirviendo como núcleo para sistemas tan populares como Ubuntu. En la actualidad, la comunidad mundial del software libre conmemora cada 16 de agosto el ya tradicional Debian Day.",
+    "fuentes": [
+      {
+        "nombre": "Debian Project History",
+        "url": "https://www.debian.org/doc/manuals/project-history/intro.en.html"
+      }
+    ],
+    "aproximado": false,
+    "fecha": "2026-08-16"
   }
 ]
