@@ -83,5 +83,23 @@
     ],
     "aproximado": false,
     "fecha": "2026-08-16"
+  },
+  {
+    "categoria": "Hardware e historia de la computación",
+    "anio": "1936",
+    "titulo": "Nacimiento de Margaret Hamilton, pionera de la ingeniería de software",
+    "texto": "El 17 de agosto de 1936 nació Margaret Hamilton, la informática teórica y matemática que dirigió el equipo del MIT encargado de desarrollar el software de navegación para las misiones Apolo de la NASA. Hamilton no solo ayudó a acuñar y legitimar el término «ingeniería de software», sino que diseñó sistemas con detección y recuperación de errores en tiempo real que resultaron cruciales para el éxito del alunizaje del Apolo 11.",
+    "fuentes": [
+      {
+        "nombre": "NASA",
+        "url": "https://www.nasa.gov/history/margaret-hamilton-apollo-software-engineer/"
+      },
+      {
+        "nombre": "Computer History Museum",
+        "url": "https://computerhistory.org/profile/margaret-hamilton/"
+      }
+    ],
+    "aproximado": false,
+    "fecha": "2026-08-17"
   }
 ]
