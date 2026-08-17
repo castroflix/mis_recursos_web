@@ -28,7 +28,6 @@ const CONFIG_PATH = path.join(ROOT, "config", "site.json");
 const DATA_PATH = path.join(ROOT, "data", "efemerides.json");
 const TEMPLATE_PATH = path.join(ROOT, "efemerides", "_template.html");
 const ARCHIVE_INDEX_PATH = path.join(ROOT, "efemerides", "index.html");
-const SITEMAP_PATH = path.join(ROOT, "sitemap.xml");
 
 const API_KEY = process.env.GEMINI_API_KEY;
 if (!API_KEY) {
@@ -115,7 +114,7 @@ function esperar(ms) {
 // (saturación del modelo, rate limit, errores puntuales del servidor).
 const CODIGOS_REINTENTABLES = new Set([429, 500, 503, 504]);
 
-async function llamarGemini(config, prompt, intentosMax = 4) {
+async function llamarGemini(config, prompt, intentosMax = 6) {
   const url = `https://generativelanguage.googleapis.com/v1beta/models/${config.modelo}:generateContent?key=${API_KEY}`;
 
   for (let intento = 1; intento <= intentosMax; intento++) {
@@ -145,10 +144,15 @@ async function llamarGemini(config, prompt, intentosMax = 4) {
       throw new Error(`Error de la API de Gemini (${respuesta.status}): ${cuerpo}`);
     }
 
-    // Backoff exponencial con jitter: 2s, 4s, 8s... + hasta 500ms aleatorios
-    const espera = 2000 * 2 ** (intento - 1) + Math.floor(Math.random() * 500);
+    // Backoff largo, pensado para esquivar picos de saturación del modelo:
+    // intento 1 -> 60s, intento 2 -> 200s, intento 3 -> 400s,
+    // intento 4 -> 800s, intento 5 -> 1600s, intento 6 -> 3200s (+jitter)
+    const espera = intento === 1
+      ? 60000 + Math.floor(Math.random() * 2000)
+      : 200000 * 2 ** (intento - 2) + Math.floor(Math.random() * 2000);
+
     console.warn(
-      `Gemini devolvió ${respuesta.status} (intento ${intento}/${intentosMax}). Reintentando en ${espera}ms...`
+      `Gemini devolvió ${respuesta.status} (intento ${intento}/${intentosMax}). Reintentando en ${Math.round(espera / 1000)}s...`
     );
     await esperar(espera);
   }
@@ -184,13 +188,6 @@ function escaparHTML(texto) {
     .replaceAll("<", "&lt;")
     .replaceAll(">", "&gt;")
     .replaceAll('"', "&quot;");
-}
-
-function escaparXML(texto) {
-  return String(texto)
-    .replaceAll("&", "&amp;")
-    .replaceAll("<", "&lt;")
-    .replaceAll(">", "&gt;");
 }
 
 function renderFuentesHTML(fuentes) {
@@ -275,37 +272,6 @@ async function actualizarIndiceArchivo(config, entrada, fechaISO) {
   }
 }
 
-async function actualizarSitemap(config, fechaISO) {
-  let sitemapXML;
-  try {
-    sitemapXML = await readFile(SITEMAP_PATH, "utf-8");
-  } catch {
-    sitemapXML = null;
-  }
-  if (!sitemapXML) return; // si no existe sitemap.xml, no hacemos nada
-
-  const urlFicha = `${config.urlSitio}efemerides/${fechaISO}.html`;
-
-  // Igual que en el índice del archivo: el marcador se mantiene siempre
-  // justo antes de cerrar </urlset>, así que insertar "marcador + nueva
-  // entrada <url>" en su lugar añade cada ficha nueva sin duplicar nada.
-  const nuevaEntrada = `  <!-- MARCADOR_NUEVA_ENTRADA -->
-  <url>
-    <loc>${escaparXML(urlFicha)}</loc>
-    <lastmod>${fechaISO}</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>`;
-
-  if (sitemapXML.includes("<!-- MARCADOR_NUEVA_ENTRADA -->")) {
-    sitemapXML = sitemapXML.replace("<!-- MARCADOR_NUEVA_ENTRADA -->", nuevaEntrada);
-    await writeFile(SITEMAP_PATH, sitemapXML, "utf-8");
-    console.log(`sitemap.xml actualizado con efemerides/${fechaISO}.html`);
-  } else {
-    console.warn("No se encontró el marcador en sitemap.xml; no se insertó la URL nueva.");
-  }
-}
-
 async function main() {
   const config = await cargarJSON(CONFIG_PATH, null);
   if (!config) throw new Error("No se encontró config/site.json");
@@ -336,7 +302,6 @@ async function main() {
 
   await escribirFichaDelDia(config, entrada, fechaISO);
   await actualizarIndiceArchivo(config, entrada, fechaISO);
-  await actualizarSitemap(config, fechaISO);
 }
 
 main().catch((err) => {
