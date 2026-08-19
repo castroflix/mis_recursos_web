@@ -114,8 +114,23 @@ function esperar(ms) {
 // (saturación del modelo, rate limit, errores puntuales del servidor).
 const CODIGOS_REINTENTABLES = new Set([429, 500, 503, 504]);
 
-async function llamarGemini(config, prompt, intentosMax = 6) {
-  const url = `https://generativelanguage.googleapis.com/v1beta/models/${config.modelo}:generateContent?key=${API_KEY}`;
+// Modelos de respaldo, en orden de preferencia. Se prueba primero el
+// modelo indicado en config/site.json y, si falla con un código
+// reintentable (saturación, rate limit...), se pasa al siguiente de
+// esta lista antes de rendirse.
+//
+// IMPORTANTE: usar solo modelos ESTABLES (sin "-preview", sin "-latest"),
+// ya que los alias experimentales (como el antiguo "gemini-flash-latest")
+// tienen cuotas mucho más restrictivas y son la causa más probable de
+// errores 503/429 persistentes. Revisar de vez en cuando la vigencia de
+// estos nombres en https://ai.google.dev/gemini-api/docs/deprecations
+const MODELOS_FALLBACK = [
+  "gemini-3.1-flash-lite",
+  "gemini-3.5-flash"
+];
+
+async function llamarGeminiConModelo(modelo, prompt, intentosMax) {
+  const url = `https://generativelanguage.googleapis.com/v1beta/models/${modelo}:generateContent?key=${API_KEY}`;
 
   for (let intento = 1; intento <= intentosMax; intento++) {
     const respuesta = await fetch(url, {
@@ -140,22 +155,54 @@ async function llamarGemini(config, prompt, intentosMax = 6) {
     const cuerpo = await respuesta.text();
     const esReintentable = CODIGOS_REINTENTABLES.has(respuesta.status);
 
-    if (!esReintentable || intento === intentosMax) {
-      throw new Error(`Error de la API de Gemini (${respuesta.status}): ${cuerpo}`);
+    if (!esReintentable) {
+      // Error no transitorio (p.ej. clave inválida, prompt bloqueado):
+      // no tiene sentido reintentar ni probar otros modelos.
+      const err = new Error(`Error de la API de Gemini (${respuesta.status}): ${cuerpo}`);
+      err.reintentable = false;
+      throw err;
     }
 
-    // Backoff largo, pensado para esquivar picos de saturación del modelo:
-    // intento 1 -> 60s, intento 2 -> 200s, intento 3 -> 400s,
-    // intento 4 -> 800s, intento 5 -> 1600s, intento 6 -> 3200s (+jitter)
-    const espera = intento === 1
-      ? 60000 + Math.floor(Math.random() * 2000)
-      : 200000 * 2 ** (intento - 2) + Math.floor(Math.random() * 2000);
+    if (intento === intentosMax) {
+      const err = new Error(`Error de la API de Gemini (${respuesta.status}) tras ${intentosMax} intentos: ${cuerpo}`);
+      err.reintentable = true;
+      throw err;
+    }
 
+    // Backoff corto con jitter: 10s, 20s... (evita agotar el timeout
+    // del runner de GitHub Actions si hay que probar varios modelos)
+    const espera = 10000 * 2 ** (intento - 1) + Math.floor(Math.random() * 1000);
     console.warn(
-      `Gemini devolvió ${respuesta.status} (intento ${intento}/${intentosMax}). Reintentando en ${Math.round(espera / 1000)}s...`
+      `Modelo ${modelo} devolvió ${respuesta.status} (intento ${intento}/${intentosMax}). Reintentando en ${Math.round(espera / 1000)}s...`
     );
     await esperar(espera);
   }
+}
+
+async function llamarGemini(config, prompt, intentosPorModelo = 3) {
+  // Prueba primero el modelo configurado en site.json y, si no está ya
+  // en la lista de respaldo, añade los de respaldo a continuación.
+  const modelosAProbar = [config.modelo, ...MODELOS_FALLBACK.filter((m) => m !== config.modelo)];
+
+  let ultimoError;
+  for (const modelo of modelosAProbar) {
+    console.log(`Probando generación con el modelo: ${modelo}...`);
+    try {
+      return await llamarGeminiConModelo(modelo, prompt, intentosPorModelo);
+    } catch (err) {
+      ultimoError = err;
+      if (err.reintentable === false) {
+        // Error definitivo (no de disponibilidad): no tiene sentido
+        // seguir probando otros modelos, todos fallarían igual.
+        throw err;
+      }
+      console.warn(`Modelo ${modelo} no disponible. Probando con el siguiente modelo de la lista...`);
+    }
+  }
+
+  throw new Error(
+    `Todos los modelos probados (${modelosAProbar.join(", ")}) fallaron por saturación o error transitorio. Último error: ${ultimoError?.message}`
+  );
 }
 
 function limpiarYParsear(textoBruto) {
