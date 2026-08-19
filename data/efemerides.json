@@ -101,5 +101,19 @@
     ],
     "aproximado": false,
     "fecha": "2026-08-17"
+  },
+  {
+    "categoria": "Software y aplicaciones",
+    "anio": "1991",
+    "titulo": "El lanzamiento de la World Wide Web al público",
+    "texto": "El 19 de agosto de 1991, Tim Berners-Lee publicó un resumen del proyecto World Wide Web en el grupo de noticias alt.hypertext, marcando la disponibilidad pública de la web. Este hito permitió que personas de todo el mundo comenzaran a acceder a la red, transformando para siempre la forma en que compartimos información y nos comunicamos.",
+    "fuentes": [
+      {
+        "nombre": "CERN",
+        "url": "https://home.cern/science/computing/birth-web/short-history-web"
+      }
+    ],
+    "aproximado": false,
+    "fecha": "2026-08-19"
   }
 ]
