@@ -6,5 +6,5 @@
   "tematica": "informática y programación: lanzamientos de sistemas operativos, primeras versiones de lenguajes de programación, software y aplicaciones emblemáticas, hitos de hardware, y nacimientos/fallecimientos de figuras clave de la historia de la computación. SOLO cuentan hechos que ocurrieron realmente el día y mes de hoy (en cualquier año); no se debe inventar ni aproximar nada.",
   "categorias": ["Sistemas operativos", "Lenguajes de programación", "Software y aplicaciones", "Hardware e historia de la computación"],
   "urlSitio": "https://castroflix.github.io/mis_recursos_web/",
-  "modelo": "gemini-flash-latest"
+  "modelo": "gemini-3.1-flash-lite"
 }
