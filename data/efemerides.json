@@ -115,5 +115,19 @@
     ],
     "aproximado": false,
     "fecha": "2026-08-19"
+  },
+  {
+    "categoria": "Software y aplicaciones",
+    "anio": "1998",
+    "titulo": "Lanzamiento de la versión 1.0 de ICQ",
+    "texto": "El 20 de agosto de 1998, Mirabilis lanzó oficialmente la versión 1.0 de ICQ, marcando un hito en la historia de la mensajería instantánea. Este software revolucionó la forma en que los usuarios se comunicaban en tiempo real a través de Internet, sentando las bases para las plataformas de chat que utilizamos en la actualidad.",
+    "fuentes": [
+      {
+        "nombre": "Computer History Museum",
+        "url": "https://computerhistory.org/blog/icq-the-first-instant-messenger/"
+      }
+    ],
+    "aproximado": false,
+    "fecha": "2026-08-20"
   }
 ]
