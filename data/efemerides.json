@@ -143,5 +143,19 @@
     ],
     "aproximado": true,
     "fecha": "2026-08-21"
+  },
+  {
+    "categoria": "Software y aplicaciones",
+    "anio": "1995",
+    "titulo": "Microsoft lanza Internet Explorer 2.0 Beta",
+    "texto": "El 22 de agosto de 1995, Microsoft lanzó la versión beta de Internet Explorer 2.0 para Windows 95. Este movimiento marcó un paso crucial en la llamada 'guerra de los navegadores', buscando competir directamente con Netscape Navigator en el incipiente mercado de la World Wide Web.",
+    "fuentes": [
+      {
+        "nombre": "Microsoft History",
+        "url": "https://news.microsoft.com/1995/08/22/microsoft-announces-availability-of-internet-explorer-for-windows-95/"
+      }
+    ],
+    "aproximado": false,
+    "fecha": "2026-08-22"
   }
 ]
