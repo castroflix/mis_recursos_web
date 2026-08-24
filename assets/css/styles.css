@@ -319,3 +319,27 @@ main .card .text-muted {
         margin-top: 0.5rem !important;
     }
 }
+
+/* --- 10. FOOTER Y CONTADOR DE VISITAS --- */
+.site-footer {
+    margin-top: 2rem;
+    padding: 1.5rem 0 2.5rem 0;
+}
+
+.contador-visitas {
+    display: inline-block;
+    opacity: 0.85;
+    filter: grayscale(0.3);
+    transition: opacity 0.2s ease, filter 0.2s ease;
+    border-radius: 6px;
+}
+
+.contador-visitas:hover {
+    opacity: 1;
+    filter: none;
+}
+
+.contador-visitas img {
+    max-width: 200px;
+    height: auto;
+}
