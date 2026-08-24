@@ -171,5 +171,19 @@
     ],
     "aproximado": false,
     "fecha": "2026-08-23"
+  },
+  {
+    "categoria": "Sistemas operativos",
+    "anio": "1995",
+    "titulo": "Windows 95 sale a la venta oficialmente",
+    "texto": "El 24 de agosto de 1995, Microsoft lanzó al mercado Windows 95, un sistema que marcó un antes y un después en la informática personal. Introdujo por primera vez elementos icónicos como el botón de Inicio, la barra de tareas y el soporte para nombres de archivo largos, cambiando para siempre la interfaz de usuario de escritorio.",
+    "fuentes": [
+      {
+        "nombre": "Microsoft News Center",
+        "url": "https://news.microsoft.com/1995/08/24/microsoft-windows-95-launches-today/"
+      }
+    ],
+    "aproximado": false,
+    "fecha": "2026-08-24"
   }
 ]
