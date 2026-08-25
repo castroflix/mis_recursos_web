@@ -185,5 +185,19 @@
     ],
     "aproximado": false,
     "fecha": "2026-08-24"
+  },
+  {
+    "categoria": "Sistemas operativos",
+    "anio": "1991",
+    "titulo": "Linus Torvalds anuncia el desarrollo de Linux",
+    "texto": "El 25 de agosto de 1991, Linus Torvalds publicó un mensaje en el grupo de noticias comp.os.minix anunciando que estaba trabajando en un sistema operativo libre para ordenadores 386 y 486. Este humilde proyecto personal terminaría convirtiéndose en el núcleo más importante y utilizado en la historia de la informática moderna, impulsando desde servidores hasta dispositivos móviles.",
+    "fuentes": [
+      {
+        "nombre": "Linux Foundation",
+        "url": "https://www.linuxfoundation.org/about/history"
+      }
+    ],
+    "aproximado": false,
+    "fecha": "2026-08-25"
   }
 ]
