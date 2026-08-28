@@ -227,5 +227,19 @@
     ],
     "aproximado": false,
     "fecha": "2026-08-27"
+  },
+  {
+    "categoria": "Sistemas operativos",
+    "anio": "1996",
+    "titulo": "Microsoft lanza Windows NT 4.0",
+    "texto": "El 28 de agosto de 1996, Microsoft lanzó oficialmente Windows NT 4.0, una versión que consolidó la estabilidad del núcleo NT en el entorno empresarial. Este sistema introdujo la interfaz de usuario de Windows 95 en la arquitectura robusta de NT, convirtiéndose en un estándar para servidores y estaciones de trabajo de alto rendimiento durante años.",
+    "fuentes": [
+      {
+        "nombre": "Microsoft News Center",
+        "url": "https://news.microsoft.com/1996/08/28/microsoft-announces-the-availability-of-windows-nt-workstation-4-0/"
+      }
+    ],
+    "aproximado": false,
+    "fecha": "2026-08-28"
   }
 ]
