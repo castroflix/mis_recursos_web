@@ -2,9 +2,13 @@ name: Efeméride diaria
 
 on:
   schedule:
-    # 06:30 UTC todos los días
-    - cron: "30 6 * * *"
+    # 03:17 UTC (no en hora rodona): las ejecuciones a las 00:00, 06:00, etc.
+    # tienen mucha cola en GitHub y a menudo se descartan del todo, no solo
+    # se retrasan. Un minuto "no redondo" dentro de una franja de poco
+    # tráfico reduce el riesgo de que el evento se pierda (como pasó el 27/08).
+    - cron: "17 3 * * *"
   workflow_dispatch: {}
+
 
 permissions:
   contents: write
