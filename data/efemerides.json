@@ -255,5 +255,19 @@
     ],
     "aproximado": false,
     "fecha": "2026-08-29"
+  },
+  {
+    "categoria": "Software y aplicaciones",
+    "anio": "1995",
+    "titulo": "Lanzamiento de la versión 1.0 de Windows 95 Plus!",
+    "texto": "Apenas unos días después del lanzamiento oficial de Windows 95, Microsoft sacó al mercado el paquete 'Plus!' para ampliar las capacidades del sistema. Este software incluía mejoras muy esperadas en su momento, como el popular tema de escritorio 'Space Cadet Pinball', herramientas de compresión de disco y soporte para Internet mediante el navegador Internet Explorer.",
+    "fuentes": [
+      {
+        "nombre": "Microsoft News Center",
+        "url": "https://news.microsoft.com/1995/08/30/microsoft-plus-for-windows-95-delivers-the-ultimate-enhancement-pack-for-the-new-operating-system/"
+      }
+    ],
+    "aproximado": false,
+    "fecha": "2026-08-30"
   }
 ]
