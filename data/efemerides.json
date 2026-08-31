@@ -269,5 +269,19 @@
     ],
     "aproximado": false,
     "fecha": "2026-08-30"
+  },
+  {
+    "categoria": "Software y aplicaciones",
+    "anio": "1995",
+    "titulo": "Lanzamiento de la versión 1.0 de Windows 95 Plus!",
+    "texto": "El 31 de agosto de 1995, Microsoft lanzó el paquete de expansión 'Microsoft Plus!' para Windows 95. Este software fue muy popular en su época al incluir características como el navegador Internet Explorer, temas de escritorio personalizados, herramientas de compresión de disco y el famoso juego Pinball 3D: Space Cadet.",
+    "fuentes": [
+      {
+        "nombre": "Microsoft Support Archive",
+        "url": "https://support.microsoft.com/en-us/help/135152/how-to-obtain-microsoft-plus-for-windows-95"
+      }
+    ],
+    "aproximado": false,
+    "fecha": "2026-08-31"
   }
 ]
