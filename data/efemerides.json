@@ -311,5 +311,19 @@
     ],
     "aproximado": false,
     "fecha": "2026-09-02"
+  },
+  {
+    "categoria": "Hardware e historia de la computación",
+    "anio": "1995",
+    "titulo": "eBay es fundado bajo el nombre AuctionWeb",
+    "texto": "El 3 de septiembre de 1995, Pierre Omidyar lanzó AuctionWeb, una plataforma de subastas en línea que más tarde se convertiría en el gigante del comercio electrónico conocido como eBay. Este hito marcó un antes y un después en la forma en que los usuarios interactuaban con la economía digital a través de la web.",
+    "fuentes": [
+      {
+        "nombre": "eBay Inc. - History",
+        "url": "https://www.ebayinc.com/company/history/"
+      }
+    ],
+    "aproximado": false,
+    "fecha": "2026-09-03"
   }
 ]
