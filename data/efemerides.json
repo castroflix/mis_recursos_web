@@ -325,5 +325,19 @@
     ],
     "aproximado": false,
     "fecha": "2026-09-03"
+  },
+  {
+    "categoria": "Hardware e historia de la computación",
+    "anio": "1998",
+    "titulo": "Google es fundado oficialmente",
+    "texto": "El 4 de septiembre de 1998, Larry Page y Sergey Brin registraron formalmente la empresa Google Inc. en California. Este hito marcó el inicio de una de las revoluciones tecnológicas más importantes de la historia, transformando para siempre la forma en que accedemos a la información en la red.",
+    "fuentes": [
+      {
+        "nombre": "Google Company",
+        "url": "https://about.google/our-story/"
+      }
+    ],
+    "aproximado": false,
+    "fecha": "2026-09-04"
   }
 ]
