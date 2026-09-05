@@ -339,5 +339,19 @@
     ],
     "aproximado": false,
     "fecha": "2026-09-04"
+  },
+  {
+    "categoria": "Hardware e historia de la computación",
+    "anio": "1977",
+    "titulo": "Ken Olsen y la fundación de Digital Equipment Corporation",
+    "texto": "El 5 de septiembre de 1977, Ken Olsen, cofundador de Digital Equipment Corporation (DEC), fue nombrado una de las figuras más influyentes de la industria tecnológica por la revista Fortune. DEC fue una pieza fundamental en la historia de la computación al popularizar las minicomputadoras, desafiando el dominio de los grandes mainframes de la época.",
+    "fuentes": [
+      {
+        "nombre": "Computer History Museum",
+        "url": "https://computerhistory.org/profile/ken-olsen/"
+      }
+    ],
+    "aproximado": false,
+    "fecha": "2026-09-05"
   }
 ]
