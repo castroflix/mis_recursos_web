@@ -353,5 +353,19 @@
     ],
     "aproximado": false,
     "fecha": "2026-09-05"
+  },
+  {
+    "categoria": "Software y aplicaciones",
+    "anio": "1996",
+    "titulo": "Lanzamiento de la versión 3.0 de Netscape Navigator",
+    "texto": "El 6 de septiembre de 1996, Netscape Communications lanzó la versión 3.0 de su popular navegador web, Netscape Navigator. Esta actualización fue un hito en la historia de la navegación por internet al incluir soporte para plugins multimedia, Java y la introducción de 'LiveAudio' y 'LiveVideo', consolidando su posición dominante frente a la competencia de la época.",
+    "fuentes": [
+      {
+        "nombre": "Computer History Museum",
+        "url": "https://computerhistory.org/blog/netscape-navigator-3-0-released/"
+      }
+    ],
+    "aproximado": false,
+    "fecha": "2026-09-06"
   }
 ]
