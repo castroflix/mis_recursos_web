@@ -367,5 +367,19 @@
     ],
     "aproximado": false,
     "fecha": "2026-09-06"
+  },
+  {
+    "categoria": "Hardware e historia de la computación",
+    "anio": "1927",
+    "titulo": "Philo Farnsworth realiza la primera transmisión de televisión electrónica",
+    "texto": "El 7 de septiembre de 1927, el inventor Philo Farnsworth logró transmitir con éxito una imagen electrónica compuesta por una línea recta en su laboratorio de San Francisco. Este hito fundamental marcó el nacimiento de la televisión totalmente electrónica, superando los sistemas mecánicos previos y sentando las bases tecnológicas para la era de la imagen digital que conocemos hoy.",
+    "fuentes": [
+      {
+        "nombre": "Library of Congress",
+        "url": "https://www.loc.gov/item/lcwaN0010729/"
+      }
+    ],
+    "aproximado": false,
+    "fecha": "2026-09-07"
   }
 ]
