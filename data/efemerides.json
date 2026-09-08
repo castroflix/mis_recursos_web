@@ -381,5 +381,19 @@
     ],
     "aproximado": false,
     "fecha": "2026-09-07"
+  },
+  {
+    "categoria": "Software y aplicaciones",
+    "anio": "1971",
+    "titulo": "El lanzamiento del lenguaje de programación Pascal",
+    "texto": "El 8 de septiembre de 1971, Niklaus Wirth publicó el informe oficial del lenguaje de programación Pascal. Este lenguaje fue diseñado con el objetivo de fomentar buenas prácticas de programación mediante el uso de la estructuración de datos y la programación estructurada, convirtiéndose en una herramienta fundamental para la enseñanza académica durante décadas.",
+    "fuentes": [
+      {
+        "nombre": "ETH Zurich - The Pascal Programming Language",
+        "url": "https://pascal.ethz.ch/pascal-report.html"
+      }
+    ],
+    "aproximado": false,
+    "fecha": "2026-09-08"
   }
 ]
