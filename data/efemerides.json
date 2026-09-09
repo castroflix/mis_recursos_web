@@ -395,5 +395,19 @@
     ],
     "aproximado": false,
     "fecha": "2026-09-08"
+  },
+  {
+    "categoria": "Hardware e historia de la computación",
+    "anio": "1947",
+    "titulo": "El nacimiento del bug informático real",
+    "texto": "El 9 de septiembre de 1947, los operadores de la computadora Harvard Mark II encontraron una polilla atrapada en uno de sus relés, lo que causaba errores en el sistema. Este incidente es ampliamente reconocido como el primer caso registrado de un 'bug' (bicho) físico que provocó un fallo real en una computadora, dando origen al término técnico que usamos hoy en día.",
+    "fuentes": [
+      {
+        "nombre": "National Museum of American History",
+        "url": "https://americanhistory.si.edu/collections/search/object/nmah_334663"
+      }
+    ],
+    "aproximado": false,
+    "fecha": "2026-09-09"
   }
 ]
