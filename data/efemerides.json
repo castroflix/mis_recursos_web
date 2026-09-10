@@ -409,5 +409,19 @@
     ],
     "aproximado": false,
     "fecha": "2026-09-09"
+  },
+  {
+    "categoria": "Hardware e historia de la computación",
+    "anio": "1997",
+    "titulo": "Apple lanza el Power Macintosh G3",
+    "texto": "El 10 de septiembre de 1997, Apple presentó la serie Power Macintosh G3, marcando un hito en el rendimiento de los ordenadores personales de la época. Estos equipos fueron los primeros en integrar el procesador PowerPC 750, ofreciendo una velocidad significativamente superior a sus predecesores y consolidando la recuperación de la compañía.",
+    "fuentes": [
+      {
+        "nombre": "Apple Newsroom",
+        "url": "https://www.apple.com/newsroom/1997/09/10Apple-Introduces-New-Power-Macintosh-G3-Series/"
+      }
+    ],
+    "aproximado": false,
+    "fecha": "2026-09-10"
   }
 ]
