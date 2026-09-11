@@ -423,5 +423,19 @@
     ],
     "aproximado": false,
     "fecha": "2026-09-10"
+  },
+  {
+    "categoria": "Software y aplicaciones",
+    "anio": "1997",
+    "titulo": "Lanzamiento de la versión 4.0 de Internet Explorer",
+    "texto": "El 11 de septiembre de 1997, Microsoft lanzó oficialmente Internet Explorer 4.0, marcando un punto de inflexión en la llamada 'guerra de los navegadores'. Esta versión introdujo la integración profunda con el sistema operativo Windows a través de Active Desktop y el motor de renderizado Trident, cambiando para siempre la forma en que los usuarios interactuaban con la web.",
+    "fuentes": [
+      {
+        "nombre": "Microsoft PressPass",
+        "url": "https://news.microsoft.com/1997/09/11/microsoft-internet-explorer-4-0-is-released-to-the-world/"
+      }
+    ],
+    "aproximado": false,
+    "fecha": "2026-09-11"
   }
 ]
