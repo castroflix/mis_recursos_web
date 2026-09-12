@@ -437,5 +437,19 @@
     ],
     "aproximado": false,
     "fecha": "2026-09-11"
+  },
+  {
+    "categoria": "Hardware e historia de la computación",
+    "anio": "1958",
+    "titulo": "Jack Kilby demuestra el primer circuito integrado",
+    "texto": "El 12 de septiembre de 1958, el ingeniero Jack Kilby presentó ante sus superiores en Texas Instruments el primer circuito integrado funcional. Este dispositivo, fabricado sobre una pequeña lámina de germanio, marcó el inicio de la era de la microelectrónica moderna y permitió la miniaturización de los ordenadores que conocemos hoy.",
+    "fuentes": [
+      {
+        "nombre": "Texas Instruments History",
+        "url": "https://www.ti.com/about-ti/company/history-of-innovation/jack-kilby.html"
+      }
+    ],
+    "aproximado": false,
+    "fecha": "2026-09-12"
   }
 ]
