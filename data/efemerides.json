@@ -451,5 +451,19 @@
     ],
     "aproximado": false,
     "fecha": "2026-09-12"
+  },
+  {
+    "categoria": "Software y aplicaciones",
+    "anio": "1985",
+    "titulo": "Lanzamiento de Super Mario Bros. para NES",
+    "texto": "El 13 de septiembre de 1985, Nintendo lanzó en Japón el legendario Super Mario Bros. para la consola Famicom (NES). Este título no solo revolucionó la industria de los videojuegos, sino que también definió los estándares de programación de plataformas y diseño de niveles que se utilizan hasta el día de hoy.",
+    "fuentes": [
+      {
+        "nombre": "Nintendo Official Archive",
+        "url": "https://www.nintendo.co.jp/corporate/history/index.html"
+      }
+    ],
+    "aproximado": false,
+    "fecha": "2026-09-13"
   }
 ]
