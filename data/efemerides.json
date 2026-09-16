@@ -493,5 +493,19 @@
     ],
     "aproximado": false,
     "fecha": "2026-09-15"
+  },
+  {
+    "categoria": "Software y aplicaciones",
+    "anio": "1987",
+    "titulo": "Se publica el Protocolo de Montreal para la capa de ozono con impacto en la industria tecnológica",
+    "texto": "Aunque es un hito ambiental, el 16 de septiembre de 1987 se firmó el Protocolo de Montreal, que obligó a la industria informática a eliminar los clorofluorocarbonos (CFC) utilizados masivamente para limpiar placas de circuitos y componentes electrónicos. Este cambio forzó una reingeniería en los procesos de fabricación de hardware a nivel global, marcando un antes y un después en la sostenibilidad de la producción tecnológica.",
+    "fuentes": [
+      {
+        "nombre": "Naciones Unidas - Protocolo de Montreal",
+        "url": "https://ozone.unep.org/treaties/montreal-protocol"
+      }
+    ],
+    "aproximado": false,
+    "fecha": "2026-09-16"
   }
 ]
