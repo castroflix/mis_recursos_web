@@ -507,5 +507,19 @@
     ],
     "aproximado": false,
     "fecha": "2026-09-16"
+  },
+  {
+    "categoria": "Software y aplicaciones",
+    "anio": "1991",
+    "titulo": "Linus Torvalds publica el código fuente de Linux",
+    "texto": "El 17 de septiembre de 1991, Linus Torvalds subió por primera vez el código fuente del núcleo Linux a un servidor FTP de la Universidad de Helsinki. Este gesto altruista marcó el inicio de uno de los proyectos de software libre más influyentes y colaborativos de la historia de la computación.",
+    "fuentes": [
+      {
+        "nombre": "Linux Foundation",
+        "url": "https://www.linuxfoundation.org/about/history"
+      }
+    ],
+    "aproximado": false,
+    "fecha": "2026-09-17"
   }
 ]
