@@ -535,5 +535,19 @@
     ],
     "aproximado": false,
     "fecha": "2026-09-18"
+  },
+  {
+    "categoria": "Software y aplicaciones",
+    "anio": "1991",
+    "titulo": "El nacimiento del lenguaje de programación Python",
+    "texto": "El 19 de septiembre de 1991, Guido van Rossum publicó la primera versión pública de Python en el grupo de noticias alt.sources. Este lenguaje, diseñado para ser altamente legible y versátil, se ha convertido con el paso de las décadas en una herramienta fundamental para el desarrollo web, la ciencia de datos y la inteligencia artificial.",
+    "fuentes": [
+      {
+        "nombre": "Python Software Foundation",
+        "url": "https://www.python.org/doc/essays/foreword/"
+      }
+    ],
+    "aproximado": false,
+    "fecha": "2026-09-19"
   }
 ]
