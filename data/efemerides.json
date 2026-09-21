@@ -563,5 +563,19 @@
     ],
     "aproximado": false,
     "fecha": "2026-09-20"
+  },
+  {
+    "categoria": "Sistemas operativos",
+    "anio": "1999",
+    "titulo": "Lanzamiento de Windows 98 Second Edition",
+    "texto": "El 21 de septiembre de 1999, Microsoft lanzó oficialmente la edición mejorada de su sistema operativo Windows 98, conocida como Second Edition (SE). Esta versión introdujo correcciones de errores críticas, soporte mejorado para hardware USB y la inclusión de Internet Explorer 5.0, consolidándose como una de las versiones más estables de la línea basada en MS-DOS.",
+    "fuentes": [
+      {
+        "nombre": "Microsoft Support Archive",
+        "url": "https://support.microsoft.com/en-us/topic/description-of-the-windows-98-second-edition-update-package-1011833d-c12e-1317-0628-9892518e38d4"
+      }
+    ],
+    "aproximado": false,
+    "fecha": "2026-09-21"
   }
 ]
