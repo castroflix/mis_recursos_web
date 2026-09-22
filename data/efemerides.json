@@ -577,5 +577,19 @@
     ],
     "aproximado": false,
     "fecha": "2026-09-21"
+  },
+  {
+    "categoria": "Software y aplicaciones",
+    "anio": "1994",
+    "titulo": "Lanzamiento de la versión 1.0 de Netscape Navigator",
+    "texto": "El 22 de septiembre de 1994, la compañía Netscape Communications lanzó oficialmente la versión 1.0 de su navegador web, Netscape Navigator. Este software revolucionó la experiencia de navegación en Internet al introducir características innovadoras como la carga progresiva de imágenes y una interfaz mucho más intuitiva para los usuarios de la época.",
+    "fuentes": [
+      {
+        "nombre": "Netscape Navigator History",
+        "url": "https://www.computerhistory.org/timeline/1994/"
+      }
+    ],
+    "aproximado": false,
+    "fecha": "2026-09-22"
   }
 ]
