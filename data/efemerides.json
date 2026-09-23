@@ -591,5 +591,19 @@
     ],
     "aproximado": false,
     "fecha": "2026-09-22"
+  },
+  {
+    "categoria": "Sistemas operativos",
+    "anio": "2008",
+    "titulo": "Lanzamiento de la primera versión comercial de Android",
+    "texto": "El 23 de septiembre de 2008, Google anunció oficialmente el lanzamiento de la versión 1.0 de Android, el sistema operativo móvil basado en Linux. Este hito marcó el inicio de una nueva era en la telefonía móvil, debutando poco después en el dispositivo T-Mobile G1, también conocido como HTC Dream.",
+    "fuentes": [
+      {
+        "nombre": "Google Blog",
+        "url": "https://googleblog.blogspot.com/2008/09/announcing-android-10-package-the.html"
+      }
+    ],
+    "aproximado": false,
+    "fecha": "2026-09-23"
   }
 ]
