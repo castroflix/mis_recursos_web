@@ -619,5 +619,19 @@
     ],
     "aproximado": false,
     "fecha": "2026-09-24"
+  },
+  {
+    "categoria": "Software y aplicaciones",
+    "anio": "1997",
+    "titulo": "Lanzamiento de la versión 4.0 de Internet Explorer",
+    "texto": "El 25 de septiembre de 1997, Microsoft lanzó Internet Explorer 4.0, un hito clave en la llamada 'guerra de los navegadores'. Esta versión introdujo la integración profunda con el sistema operativo Windows a través de Active Desktop y marcó un cambio significativo en la navegación web de la época.",
+    "fuentes": [
+      {
+        "nombre": "Microsoft PressPass",
+        "url": "https://news.microsoft.com/1997/09/25/microsoft-internet-explorer-4-0-is-now-available/"
+      }
+    ],
+    "aproximado": false,
+    "fecha": "2026-09-25"
   }
 ]
