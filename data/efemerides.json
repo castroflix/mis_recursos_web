@@ -647,5 +647,19 @@
     ],
     "aproximado": false,
     "fecha": "2026-09-26"
+  },
+  {
+    "categoria": "Software y aplicaciones",
+    "anio": "1998",
+    "titulo": "Google es fundado oficialmente",
+    "texto": "El 27 de septiembre de 1998, Larry Page y Sergey Brin fundaron oficialmente Google en un garaje de Menlo Park, California. Este hito marcó el inicio de la transformación definitiva en la forma en que el mundo accede a la información a través de su motor de búsqueda.",
+    "fuentes": [
+      {
+        "nombre": "Google Company",
+        "url": "https://about.google/our-story/"
+      }
+    ],
+    "aproximado": false,
+    "fecha": "2026-09-27"
   }
 ]
