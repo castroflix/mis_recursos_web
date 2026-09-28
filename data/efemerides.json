@@ -661,5 +661,19 @@
     ],
     "aproximado": false,
     "fecha": "2026-09-27"
+  },
+  {
+    "categoria": "Software y aplicaciones",
+    "anio": "1994",
+    "titulo": "Lanzamiento de la versión 1.0 de Netscape Navigator",
+    "texto": "El 28 de septiembre de 1994, se lanzó oficialmente la primera versión comercial de Netscape Navigator, el navegador que revolucionó la navegación web en los años 90. Este software fue fundamental para la popularización de Internet, introduciendo características innovadoras como la carga progresiva de imágenes y las cookies.",
+    "fuentes": [
+      {
+        "nombre": "Netscape Navigator 1.0 Release History",
+        "url": "https://www.jwz.org/doc/mail-history.html"
+      }
+    ],
+    "aproximado": false,
+    "fecha": "2026-09-28"
   }
 ]
