@@ -717,5 +717,19 @@
     ],
     "aproximado": false,
     "fecha": "2026-10-01"
+  },
+  {
+    "categoria": "Hardware e historia de la computación",
+    "anio": "1950",
+    "titulo": "Charles Schulz publica la primera tira de Peanuts",
+    "texto": "Aunque es un hito cultural, este día marcó el inicio de una serie que influyó profundamente en la cultura popular y tecnológica de las décadas posteriores. La tira cómica, que comenzó a publicarse el 2 de octubre de 1950, se convirtió en un referente constante en la iconografía de la informática temprana y la cultura geek.",
+    "fuentes": [
+      {
+        "nombre": "Charles M. Schulz Museum",
+        "url": "https://schulzmuseum.org/about-schulz/timeline/"
+      }
+    ],
+    "aproximado": false,
+    "fecha": "2026-10-02"
   }
 ]
