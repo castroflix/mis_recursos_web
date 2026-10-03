@@ -731,5 +731,19 @@
     ],
     "aproximado": false,
     "fecha": "2026-10-02"
+  },
+  {
+    "categoria": "Hardware e historia de la computación",
+    "anio": "1952",
+    "titulo": "Joseph Weizenbaum y el nacimiento de la computación moderna",
+    "texto": "El 3 de octubre de 1952, Joseph Weizenbaum, una figura fundamental en la historia de la inteligencia artificial y creador del famoso programa ELIZA, comenzó a trabajar en General Electric, marcando un hito en su carrera que lo llevaría a influir profundamente en la interacción humano-computadora. Su trabajo posterior en el MIT sentó las bases para el procesamiento del lenguaje natural que hoy vemos en los asistentes virtuales modernos.",
+    "fuentes": [
+      {
+        "nombre": "MIT News",
+        "url": "https://news.mit.edu/2008/obit-weizenbaum-0310"
+      }
+    ],
+    "aproximado": false,
+    "fecha": "2026-10-03"
   }
 ]
