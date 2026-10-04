@@ -745,5 +745,19 @@
     ],
     "aproximado": false,
     "fecha": "2026-10-03"
+  },
+  {
+    "categoria": "Hardware e historia de la computación",
+    "anio": "1957",
+    "titulo": "La Unión Soviética lanza el Sputnik 1, impulsando la carrera espacial y tecnológica",
+    "texto": "El 4 de octubre de 1957, la humanidad entró en la era espacial con el lanzamiento del Sputnik 1, el primer satélite artificial de la historia. Este hito tecnológico no solo marcó un antes y un después en la exploración espacial, sino que aceleró drásticamente la inversión en computación y electrónica a nivel global para procesar datos orbitales y de telemetría.",
+    "fuentes": [
+      {
+        "nombre": "NASA History Division",
+        "url": "https://history.nasa.gov/sputnik/"
+      }
+    ],
+    "aproximado": false,
+    "fecha": "2026-10-04"
   }
 ]
