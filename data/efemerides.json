@@ -759,5 +759,19 @@
     ],
     "aproximado": false,
     "fecha": "2026-10-04"
+  },
+  {
+    "categoria": "Software y aplicaciones",
+    "anio": "2011",
+    "titulo": "Apple lanza Siri con el iPhone 4S",
+    "texto": "El 5 de octubre de 2011, Apple presentó al mundo Siri como una característica central del iPhone 4S. Este asistente virtual marcó un antes y un después en la integración de la inteligencia artificial en dispositivos móviles de consumo, permitiendo a los usuarios interactuar con sus teléfonos mediante lenguaje natural.",
+    "fuentes": [
+      {
+        "nombre": "Apple Newsroom",
+        "url": "https://www.apple.com/newsroom/2011/10/05Apple-Launches-iPhone-4S-iOS-5-and-iCloud/"
+      }
+    ],
+    "aproximado": false,
+    "fecha": "2026-10-05"
   }
 ]
