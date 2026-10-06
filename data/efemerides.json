@@ -773,5 +773,19 @@
     ],
     "aproximado": false,
     "fecha": "2026-10-05"
+  },
+  {
+    "categoria": "Software y aplicaciones",
+    "anio": "2010",
+    "titulo": "Lanzamiento de Instagram para iOS",
+    "texto": "El 6 de octubre de 2010, Kevin Systrom y Mike Krieger lanzaron oficialmente Instagram en la App Store de Apple. Esta aplicación revolucionó la forma en que compartimos fotografías digitales gracias a sus filtros artísticos y su enfoque en la red social visual, convirtiéndose rápidamente en un fenómeno global.",
+    "fuentes": [
+      {
+        "nombre": "Instagram Press",
+        "url": "https://about.instagram.com/about-us"
+      }
+    ],
+    "aproximado": false,
+    "fecha": "2026-10-06"
   }
 ]
