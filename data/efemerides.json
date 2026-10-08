@@ -801,5 +801,19 @@
     ],
     "aproximado": false,
     "fecha": "2026-10-07"
+  },
+  {
+    "categoria": "Software y aplicaciones",
+    "anio": "1996",
+    "titulo": "Lanzamiento de la versión 3.0 de Netscape Navigator",
+    "texto": "El 8 de octubre de 1996, Netscape Communications lanzó la versión 3.0 de su popular navegador web, que introdujo características revolucionarias como el soporte para plugins multimedia y el lenguaje de programación JavaScript. Esta actualización consolidó a Netscape como el líder indiscutible en la navegación por internet durante la época dorada de la web.",
+    "fuentes": [
+      {
+        "nombre": "Netscape Navigator 3.0 Release Notes",
+        "url": "https://www.jwz.org/doc/netscape-3.html"
+      }
+    ],
+    "aproximado": false,
+    "fecha": "2026-10-08"
   }
 ]
