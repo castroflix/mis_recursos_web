@@ -815,5 +815,19 @@
     ],
     "aproximado": false,
     "fecha": "2026-10-08"
+  },
+  {
+    "categoria": "Hardware e historia de la computación",
+    "anio": "1967",
+    "titulo": "Nacimiento de la ACM SIGGRAPH",
+    "texto": "El 9 de octubre de 1967 se fundó formalmente el Grupo de Interés Especial en Gráficos por Computadora (SIGGRAPH) de la ACM. Este organismo ha sido fundamental para el desarrollo de la computación gráfica, estableciendo estándares y fomentando la investigación que hoy permite desde el diseño asistido por computadora hasta los efectos visuales más avanzados del cine.",
+    "fuentes": [
+      {
+        "nombre": "ACM SIGGRAPH History",
+        "url": "https://www.siggraph.org/about/history/"
+      }
+    ],
+    "aproximado": false,
+    "fecha": "2026-10-09"
   }
 ]
