@@ -829,5 +829,19 @@
     ],
     "aproximado": false,
     "fecha": "2026-10-09"
+  },
+  {
+    "categoria": "Software y aplicaciones",
+    "anio": "1985",
+    "titulo": "Microsoft lanza la primera versión de Excel",
+    "texto": "El 10 de octubre de 1985, Microsoft lanzó la primera versión de Excel, inicialmente diseñada para el sistema operativo Macintosh de Apple. Esta hoja de cálculo revolucionó el mercado al introducir una interfaz gráfica intuitiva y capacidades de cálculo avanzadas que superaron rápidamente a sus competidores de la época.",
+    "fuentes": [
+      {
+        "nombre": "Microsoft History",
+        "url": "https://news.microsoft.com/stories/microsoft-excel-history/"
+      }
+    ],
+    "aproximado": false,
+    "fecha": "2026-10-10"
   }
 ]
