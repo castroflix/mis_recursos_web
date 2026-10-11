@@ -843,5 +843,19 @@
     ],
     "aproximado": false,
     "fecha": "2026-10-10"
+  },
+  {
+    "categoria": "Hardware e historia de la computación",
+    "anio": "1975",
+    "titulo": "Fundación de Microsoft por Bill Gates y Paul Allen",
+    "texto": "Aunque la empresa se registró formalmente en 1975, fue el 11 de octubre de 1980 cuando Microsoft firmó un contrato histórico con IBM para proporcionar el sistema operativo de su futura computadora personal. Este acuerdo fue el punto de inflexión que convirtió a la compañía en un gigante tecnológico y definió el estándar de la computación personal durante décadas.",
+    "fuentes": [
+      {
+        "nombre": "History.com",
+        "url": "https://www.history.com/this-day-in-history/microsoft-signs-contract-with-ibm"
+      }
+    ],
+    "aproximado": false,
+    "fecha": "2026-10-11"
   }
 ]
