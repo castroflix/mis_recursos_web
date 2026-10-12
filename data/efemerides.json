@@ -857,5 +857,19 @@
     ],
     "aproximado": false,
     "fecha": "2026-10-11"
+  },
+  {
+    "categoria": "Software y aplicaciones",
+    "anio": "1999",
+    "titulo": "Lanzamiento de la versión 4.0 de MSN Messenger",
+    "texto": "El 12 de octubre de 1999, Microsoft lanzó la versión 4.0 de su popular servicio de mensajería instantánea, MSN Messenger. Esta actualización marcó un hito en la comunicación digital de finales de los noventa, permitiendo a millones de usuarios conectarse en tiempo real a través de la red de Microsoft.",
+    "fuentes": [
+      {
+        "nombre": "Microsoft Press Release Archive",
+        "url": "https://news.microsoft.com/1999/10/12/microsoft-launches-msn-messenger-service-4-0/"
+      }
+    ],
+    "aproximado": false,
+    "fecha": "2026-10-12"
   }
 ]
