@@ -871,5 +871,19 @@
     ],
     "aproximado": false,
     "fecha": "2026-10-12"
+  },
+  {
+    "categoria": "Hardware e historia de la computación",
+    "anio": "1994",
+    "titulo": "Netscape Communications lanza la versión beta de Netscape Navigator",
+    "texto": "El 13 de octubre de 1994, la compañía Netscape Communications lanzó la primera versión beta pública de su navegador web, Netscape Navigator. Este software revolucionó la experiencia de navegación en internet, convirtiéndose rápidamente en el estándar dominante de la época y marcando el inicio de la famosa 'guerra de los navegadores'.",
+    "fuentes": [
+      {
+        "nombre": "Computer History Museum",
+        "url": "https://computerhistory.org/blog/netscape-navigator-the-web-browser-that-changed-everything/"
+      }
+    ],
+    "aproximado": false,
+    "fecha": "2026-10-13"
   }
 ]
