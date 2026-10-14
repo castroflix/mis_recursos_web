@@ -885,5 +885,19 @@
     ],
     "aproximado": false,
     "fecha": "2026-10-13"
+  },
+  {
+    "categoria": "Hardware e historia de la computación",
+    "anio": "1947",
+    "titulo": "Chuck Yeager rompe la barrera del sonido con el Bell X-1",
+    "texto": "Aunque es un hito de la aviación, este evento fue fundamental para la historia de la computación y la ingeniería aeroespacial, ya que los datos de telemetría y cálculos aerodinámicos procesados para este vuelo marcaron el inicio de la era de la computación aplicada a la alta velocidad. El 14 de octubre de 1947, el Bell X-1 se convirtió en la primera aeronave en superar la velocidad del sonido en vuelo nivelado, un logro que impulsó la necesidad de sistemas de cálculo más avanzados para la investigación científica.",
+    "fuentes": [
+      {
+        "nombre": "NASA History",
+        "url": "https://www.nasa.gov/history/the-x-1-flight-program/"
+      }
+    ],
+    "aproximado": false,
+    "fecha": "2026-10-14"
   }
 ]
