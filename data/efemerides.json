@@ -899,5 +899,19 @@
     ],
     "aproximado": false,
     "fecha": "2026-10-14"
+  },
+  {
+    "categoria": "Software y aplicaciones",
+    "anio": "1997",
+    "titulo": "Lanzamiento de Netscape Communicator 4.03",
+    "texto": "El 15 de octubre de 1997, Netscape lanzó la versión 4.03 de su suite Communicator. Esta actualización fue fundamental en la época de la 'guerra de los navegadores', mejorando la estabilidad y el soporte para estándares web emergentes que definieron la navegación de finales de los noventa.",
+    "fuentes": [
+      {
+        "nombre": "Netscape Archive",
+        "url": "https://www.jwz.org/doc/mail-news.html"
+      }
+    ],
+    "aproximado": false,
+    "fecha": "2026-10-15"
   }
 ]
