@@ -913,5 +913,19 @@
     ],
     "aproximado": false,
     "fecha": "2026-10-15"
+  },
+  {
+    "categoria": "Software y aplicaciones",
+    "anio": "1995",
+    "titulo": "Lanzamiento de la versión 2.0 de Internet Explorer",
+    "texto": "El 16 de octubre de 1995, Microsoft lanzó Internet Explorer 2.0 para Windows 95 y Windows NT. Esta versión marcó un hito importante al introducir soporte para JavaScript y tablas HTML, elementos que fueron fundamentales para la evolución de la web moderna y la competencia directa con Netscape Navigator.",
+    "fuentes": [
+      {
+        "nombre": "Microsoft History",
+        "url": "https://news.microsoft.com/1995/10/16/microsoft-announces-internet-explorer-2-0/"
+      }
+    ],
+    "aproximado": false,
+    "fecha": "2026-10-16"
   }
 ]
