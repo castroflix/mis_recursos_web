@@ -941,5 +941,19 @@
     ],
     "aproximado": false,
     "fecha": "2026-10-17"
+  },
+  {
+    "categoria": "Sistemas operativos",
+    "anio": "1994",
+    "titulo": "IBM lanza OS/2 Warp 3",
+    "texto": "El 18 de octubre de 1994, IBM lanzó oficialmente OS/2 Warp 3, su sistema operativo de 32 bits diseñado para competir directamente con Windows. Fue una versión muy popular en su época, destacando por su capacidad multitarea y su interfaz gráfica avanzada conocida como Workplace Shell.",
+    "fuentes": [
+      {
+        "nombre": "IBM Archives",
+        "url": "https://www.ibm.com/ibm/history/exhibits/os2/os2_os2warp.html"
+      }
+    ],
+    "aproximado": false,
+    "fecha": "2026-10-18"
   }
 ]
