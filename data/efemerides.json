@@ -955,5 +955,19 @@
     ],
     "aproximado": false,
     "fecha": "2026-10-18"
+  },
+  {
+    "categoria": "Hardware e historia de la computación",
+    "anio": "1987",
+    "titulo": "IBM lanza el sistema PS/2 Modelo 80",
+    "texto": "El 19 de octubre de 1987, IBM presentó oficialmente el modelo de gama alta de su línea Personal System/2, el Modelo 80. Este equipo destacaba por utilizar el procesador Intel 80386 a 16 o 20 MHz, marcando un salto significativo en el rendimiento de las computadoras personales de escritorio de la época.",
+    "fuentes": [
+      {
+        "nombre": "IBM Archives",
+        "url": "https://www.ibm.com/ibm/history/exhibits/pc2/pc2_p80.html"
+      }
+    ],
+    "aproximado": false,
+    "fecha": "2026-10-19"
   }
 ]
