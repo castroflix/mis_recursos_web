@@ -969,5 +969,19 @@
     ],
     "aproximado": false,
     "fecha": "2026-10-19"
+  },
+  {
+    "categoria": "Hardware e historia de la computación",
+    "anio": "1994",
+    "titulo": "Lanzamiento del Power Macintosh 6100",
+    "texto": "Apple lanzó al mercado el Power Macintosh 6100 el 20 de octubre de 1994, marcando un hito importante en la transición de la compañía hacia la arquitectura PowerPC. Este equipo fue uno de los primeros en ofrecer un rendimiento significativamente superior gracias a su procesador RISC, consolidando la apuesta de Apple por una nueva era de potencia en la computación personal.",
+    "fuentes": [
+      {
+        "nombre": "Apple History",
+        "url": "https://apple-history.com/6100"
+      }
+    ],
+    "aproximado": false,
+    "fecha": "2026-10-20"
   }
 ]
