@@ -983,5 +983,19 @@
     ],
     "aproximado": false,
     "fecha": "2026-10-20"
+  },
+  {
+    "categoria": "Hardware e historia de la computación",
+    "anio": "1971",
+    "titulo": "Nacimiento de la leyenda de la computación, Ed Roberts y MITS",
+    "texto": "El 21 de octubre de 1971, Ed Roberts fundó MITS (Micro Instrumentation and Telemetry Systems), la empresa que cambiaría el curso de la historia al crear el Altair 8800. Este dispositivo es considerado por muchos historiadores como el detonante de la revolución de la microcomputadora personal que inspiró a figuras como Bill Gates y Paul Allen.",
+    "fuentes": [
+      {
+        "nombre": "Computer History Museum",
+        "url": "https://computerhistory.org/profile/ed-roberts/"
+      }
+    ],
+    "aproximado": false,
+    "fecha": "2026-10-21"
   }
 ]
