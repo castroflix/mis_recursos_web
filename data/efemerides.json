@@ -997,5 +997,19 @@
     ],
     "aproximado": false,
     "fecha": "2026-10-21"
+  },
+  {
+    "categoria": "Sistemas operativos",
+    "anio": "2009",
+    "titulo": "Microsoft lanza oficialmente Windows 7 al mercado",
+    "texto": "El 22 de octubre de 2009, Microsoft puso a la venta Windows 7, sucediendo al criticado Windows Vista. Este sistema operativo se convirtió rápidamente en un éxito rotundo gracias a su estabilidad, mejoras en la interfaz de usuario y una gestión de recursos mucho más eficiente que su predecesor.",
+    "fuentes": [
+      {
+        "nombre": "Microsoft News Center",
+        "url": "https://news.microsoft.com/2009/10/22/windows-7-arrives-as-the-pc-reimagined-for-the-way-people-want-to-work-and-play/"
+      }
+    ],
+    "aproximado": false,
+    "fecha": "2026-10-22"
   }
 ]
