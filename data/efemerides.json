@@ -1053,5 +1053,19 @@
     ],
     "aproximado": false,
     "fecha": "2026-10-25"
+  },
+  {
+    "categoria": "Sistemas operativos",
+    "anio": "2001",
+    "titulo": "Microsoft lanza Windows XP al mercado",
+    "texto": "El 26 de octubre de 2001, Microsoft lanzó oficialmente Windows XP, un sistema operativo que marcó un antes y un después por su estabilidad y su nueva interfaz gráfica Luna. Este lanzamiento unificó las líneas de productos domésticos y profesionales de la compañía, convirtiéndose en uno de los sistemas más longevos y queridos de la historia de la informática.",
+    "fuentes": [
+      {
+        "nombre": "Microsoft News Center",
+        "url": "https://news.microsoft.com/2001/10/26/microsoft-launches-windows-xp-delivering-the-best-of-the-pc-to-the-world/"
+      }
+    ],
+    "aproximado": false,
+    "fecha": "2026-10-26"
   }
 ]
