@@ -1067,5 +1067,19 @@
     ],
     "aproximado": false,
     "fecha": "2026-10-26"
+  },
+  {
+    "categoria": "Sistemas operativos",
+    "anio": "2009",
+    "titulo": "Microsoft lanza oficialmente Windows 7 al mercado",
+    "texto": "El 27 de octubre de 2009, Microsoft lanzó oficialmente Windows 7, sucediendo al criticado Windows Vista. Esta versión se centró en mejorar el rendimiento, la estabilidad y la interfaz de usuario, convirtiéndose rápidamente en uno de los sistemas operativos más queridos y utilizados por los usuarios de PC en todo el mundo.",
+    "fuentes": [
+      {
+        "nombre": "Microsoft News Center",
+        "url": "https://news.microsoft.com/2009/10/22/windows-7-arrives-as-the-pc-reinvents-itself/"
+      }
+    ],
+    "aproximado": false,
+    "fecha": "2026-10-27"
   }
 ]
