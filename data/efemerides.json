@@ -1081,5 +1081,19 @@
     ],
     "aproximado": false,
     "fecha": "2026-10-27"
+  },
+  {
+    "categoria": "Sistemas operativos",
+    "anio": "2009",
+    "titulo": "Microsoft lanza Windows 7 al mercado",
+    "texto": "Tras el complejo despliegue de su predecesor, Microsoft puso a la venta Windows 7 con el objetivo de mejorar la estabilidad y la interfaz de usuario. Este sistema operativo se convirtió rápidamente en uno de los más queridos por la comunidad técnica gracias a su rendimiento optimizado y su renovada barra de tareas.",
+    "fuentes": [
+      {
+        "nombre": "Microsoft News Center",
+        "url": "https://news.microsoft.com/2009/10/28/windows-7-arrives-as-a-milestone-for-microsoft-and-the-pc-industry/"
+      }
+    ],
+    "aproximado": false,
+    "fecha": "2026-10-28"
   }
 ]
