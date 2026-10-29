@@ -1095,5 +1095,19 @@
     ],
     "aproximado": false,
     "fecha": "2026-10-28"
+  },
+  {
+    "categoria": "Hardware e historia de la computación",
+    "anio": "1969",
+    "titulo": "Nace ARPANET, el precursor de Internet",
+    "texto": "El 29 de octubre de 1969 se envió el primer mensaje exitoso a través de ARPANET, conectando la Universidad de California en Los Ángeles (UCLA) con el Instituto de Investigación de Stanford. Este hito marcó el inicio de la comunicación entre computadoras remotas, sentando las bases tecnológicas de lo que hoy conocemos como Internet.",
+    "fuentes": [
+      {
+        "nombre": "Computer History Museum",
+        "url": "https://computerhistory.org/blog/the-first-message-sent-on-arpanet/"
+      }
+    ],
+    "aproximado": false,
+    "fecha": "2026-10-29"
   }
 ]
