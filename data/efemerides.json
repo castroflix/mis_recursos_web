@@ -1109,5 +1109,19 @@
     ],
     "aproximado": false,
     "fecha": "2026-10-29"
+  },
+  {
+    "categoria": "Hardware e historia de la computación",
+    "anio": "1985",
+    "titulo": "Lanzamiento de la computadora Commodore 128",
+    "texto": "El 30 de octubre de 1985, Commodore lanzó oficialmente la Commodore 128 en el mercado estadounidense. Este equipo fue el sucesor de la legendaria Commodore 64 y destacó por su capacidad de ejecutar software de CP/M, convirtiéndose en una de las máquinas más versátiles de la era de los 8 bits.",
+    "fuentes": [
+      {
+        "nombre": "Computer History Museum",
+        "url": "https://computerhistory.org/profile/commodore-128/"
+      }
+    ],
+    "aproximado": false,
+    "fecha": "2026-10-30"
   }
 ]
