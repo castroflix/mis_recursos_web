@@ -1123,5 +1123,19 @@
     ],
     "aproximado": false,
     "fecha": "2026-10-30"
+  },
+  {
+    "categoria": "Hardware e historia de la computación",
+    "anio": "2008",
+    "titulo": "Satoshi Nakamoto publica el libro blanco de Bitcoin",
+    "texto": "El 31 de octubre de 2008, una persona o colectivo bajo el seudónimo de Satoshi Nakamoto publicó el documento técnico titulado 'Bitcoin: A Peer-to-Peer Electronic Cash System' en una lista de correo sobre criptografía. Este histórico informe definió las bases conceptuales y técnicas de la arquitectura blockchain y el funcionamiento de las redes descentralizadas. Su propuesta resolvió por primera vez el problema del doble gasto de forma puramente entre pares y sin necesidad de entidades centrales.",
+    "fuentes": [
+      {
+        "nombre": "Bitcoin.org",
+        "url": "https://bitcoin.org/bitcoin.pdf"
+      }
+    ],
+    "aproximado": false,
+    "fecha": "2026-10-31"
   }
 ]
