@@ -1137,5 +1137,19 @@
     ],
     "aproximado": false,
     "fecha": "2026-10-31"
+  },
+  {
+    "categoria": "Software y aplicaciones",
+    "anio": "1994",
+    "titulo": "Lanzamiento de la versión 1.0 de Netscape Navigator",
+    "texto": "El 1 de noviembre de 1994, la compañía Netscape Communications lanzó la primera versión beta de su navegador web, Netscape Navigator. Este software revolucionó la navegación en Internet al introducir funciones innovadoras como la carga progresiva de imágenes, convirtiéndose rápidamente en el estándar de facto de la época.",
+    "fuentes": [
+      {
+        "nombre": "Computer History Museum",
+        "url": "https://computerhistory.org/blog/the-browser-wars-part-1/"
+      }
+    ],
+    "aproximado": false,
+    "fecha": "2026-11-01"
   }
 ]
