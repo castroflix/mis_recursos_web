@@ -1151,5 +1151,19 @@
     ],
     "aproximado": false,
     "fecha": "2026-11-01"
+  },
+  {
+    "categoria": "Software y aplicaciones",
+    "anio": "2000",
+    "titulo": "La Estación Espacial Internacional recibe a su primera tripulación",
+    "texto": "El 2 de noviembre de 2000, la Expedición 1 llegó a la Estación Espacial Internacional, marcando el inicio de la presencia humana continua en el espacio. Este hito tecnológico fue posible gracias a complejos sistemas de control de vuelo y software de soporte vital que han evolucionado constantemente desde entonces para gestionar la vida en órbita.",
+    "fuentes": [
+      {
+        "nombre": "NASA",
+        "url": "https://www.nasa.gov/history/expedition-1-the-beginning-of-continuous-human-presence-in-space/"
+      }
+    ],
+    "aproximado": false,
+    "fecha": "2026-11-02"
   }
 ]
