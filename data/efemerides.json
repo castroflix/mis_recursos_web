@@ -1179,5 +1179,19 @@
     ],
     "aproximado": false,
     "fecha": "2026-11-03"
+  },
+  {
+    "categoria": "Software y aplicaciones",
+    "anio": "2008",
+    "titulo": "Lanzamiento de la versión 1.0 del sistema operativo Android",
+    "texto": "El 4 de noviembre de 2008, Google lanzó oficialmente la primera versión comercial de Android, marcando un hito en la historia de la telefonía móvil. Este sistema operativo, basado en el núcleo de Linux, permitió la creación de un ecosistema abierto que transformó radicalmente la manera en que interactuamos con nuestros dispositivos inteligentes.",
+    "fuentes": [
+      {
+        "nombre": "Android Developers",
+        "url": "https://developer.android.com/about/versions/android-1.0"
+      }
+    ],
+    "aproximado": false,
+    "fecha": "2026-11-04"
   }
 ]
