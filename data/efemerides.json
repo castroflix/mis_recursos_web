@@ -1193,5 +1193,19 @@
     ],
     "aproximado": false,
     "fecha": "2026-11-04"
+  },
+  {
+    "categoria": "Sistemas operativos",
+    "anio": "2007",
+    "titulo": "Google anuncia la plataforma Android",
+    "texto": "El 5 de noviembre de 2007, Google anunció oficialmente la creación de la Open Handset Alliance y presentó Android, un sistema operativo de código abierto diseñado para dispositivos móviles. Este hito marcó un cambio radical en la industria tecnológica, permitiendo a los desarrolladores crear aplicaciones para una plataforma abierta que pronto se convertiría en la más utilizada a nivel mundial.",
+    "fuentes": [
+      {
+        "nombre": "Google Blog",
+        "url": "https://googleblog.blogspot.com/2007/11/google-launches-android-open-platform.html"
+      }
+    ],
+    "aproximado": false,
+    "fecha": "2026-11-05"
   }
 ]
