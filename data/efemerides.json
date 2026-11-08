@@ -1235,5 +1235,19 @@
     ],
     "aproximado": false,
     "fecha": "2026-11-07"
+  },
+  {
+    "categoria": "Software y aplicaciones",
+    "anio": "1995",
+    "titulo": "Lanzamiento de la versión 2.0 de Internet Explorer",
+    "texto": "Microsoft lanzó oficialmente la segunda versión de su navegador Internet Explorer el 8 de noviembre de 1995. Esta edición marcó un hito importante al introducir soporte para tablas HTML, marcos y SSL, elementos que fueron fundamentales para el desarrollo de la web moderna de mediados de los años 90.",
+    "fuentes": [
+      {
+        "nombre": "Microsoft PressPass",
+        "url": "https://news.microsoft.com/1995/11/08/microsoft-announces-internet-explorer-2-0/"
+      }
+    ],
+    "aproximado": false,
+    "fecha": "2026-11-08"
   }
 ]
