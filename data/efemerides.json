@@ -1249,5 +1249,19 @@
     ],
     "aproximado": false,
     "fecha": "2026-11-08"
+  },
+  {
+    "categoria": "Software y aplicaciones",
+    "anio": "1987",
+    "titulo": "Microsoft lanza la versión 2.0 de Windows",
+    "texto": "El 9 de noviembre de 1987, Microsoft lanzó Windows 2.0, una actualización significativa que introdujo la capacidad de superponer ventanas y el uso de iconos en el escritorio. Esta versión fue fundamental para la historia de la informática, ya que sentó las bases de la interfaz gráfica que más tarde popularizaría el sistema operativo en todo el mundo.",
+    "fuentes": [
+      {
+        "nombre": "Microsoft History",
+        "url": "https://news.microsoft.com/stories/history/"
+      }
+    ],
+    "aproximado": false,
+    "fecha": "2026-11-09"
   }
 ]
