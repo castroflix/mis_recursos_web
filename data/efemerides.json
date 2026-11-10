@@ -1263,5 +1263,19 @@
     ],
     "aproximado": false,
     "fecha": "2026-11-09"
+  },
+  {
+    "categoria": "Software y aplicaciones",
+    "anio": "1983",
+    "titulo": "Microsoft anuncia el lanzamiento de Windows 1.0",
+    "texto": "El 10 de noviembre de 1983, Microsoft presentó oficialmente su primer entorno operativo gráfico para MS-DOS, conocido como Windows. Aunque su lanzamiento comercial se retrasaría hasta 1985, este anuncio marcó el inicio de la transición de la compañía hacia una interfaz basada en ventanas y menús desplegables.",
+    "fuentes": [
+      {
+        "nombre": "Microsoft News Center",
+        "url": "https://news.microsoft.com/1983/11/10/announcement-of-microsoft-windows/"
+      }
+    ],
+    "aproximado": false,
+    "fecha": "2026-11-10"
   }
 ]
