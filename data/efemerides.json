@@ -1291,5 +1291,19 @@
     ],
     "aproximado": false,
     "fecha": "2026-11-11"
+  },
+  {
+    "categoria": "Sistemas operativos",
+    "anio": "1985",
+    "titulo": "Microsoft lanza la versión 1.0 de Windows",
+    "texto": "El 20 de noviembre de 1985, Microsoft lanzó oficialmente Windows 1.0, su primera interfaz gráfica de usuario para el sistema operativo MS-DOS. Este hito marcó el inicio de una nueva era en la computación personal, permitiendo a los usuarios interactuar con el ordenador mediante ventanas y un ratón en lugar de comandos de texto.",
+    "fuentes": [
+      {
+        "nombre": "Microsoft History",
+        "url": "https://news.microsoft.com/stories/microsoft-chronology/"
+      }
+    ],
+    "aproximado": true,
+    "fecha": "2026-11-12"
   }
 ]
