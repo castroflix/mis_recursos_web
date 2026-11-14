@@ -1319,5 +1319,19 @@
     ],
     "aproximado": false,
     "fecha": "2026-11-13"
+  },
+  {
+    "categoria": "Software y aplicaciones",
+    "anio": "1985",
+    "titulo": "Lanzamiento de la versión 1.0 de Windows",
+    "texto": "El 20 de noviembre de 1985, Microsoft lanzó oficialmente la primera versión de Windows, marcando un hito en la informática al introducir una interfaz gráfica de usuario para MS-DOS. Aunque inicialmente fue una extensión del sistema operativo existente, este lanzamiento sentó las bases para la dominancia de Windows en el mercado de las computadoras personales durante las décadas siguientes.",
+    "fuentes": [
+      {
+        "nombre": "Microsoft News Center",
+        "url": "https://news.microsoft.com/1985/11/20/announcing-windows-1-0/"
+      }
+    ],
+    "aproximado": true,
+    "fecha": "2026-11-14"
   }
 ]
