@@ -1333,5 +1333,19 @@
     ],
     "aproximado": true,
     "fecha": "2026-11-14"
+  },
+  {
+    "categoria": "Hardware e historia de la computación",
+    "anio": "1971",
+    "titulo": "Intel lanza el 4004, el primer microprocesador comercial del mundo",
+    "texto": "El 15 de noviembre de 1971, Intel revolucionó la industria tecnológica al anunciar el 4004, el primer microprocesador de arquitectura de 4 bits disponible comercialmente. Este hito permitió integrar las funciones de una unidad central de procesamiento en un solo chip, sentando las bases para la era de la computación personal tal como la conocemos hoy.",
+    "fuentes": [
+      {
+        "nombre": "Intel Newsroom",
+        "url": "https://www.intel.com/content/www/us/en/newsroom/news/intel-4004-microprocessor-turns-50.html"
+      }
+    ],
+    "aproximado": false,
+    "fecha": "2026-11-15"
   }
 ]
