@@ -1375,5 +1375,19 @@
     ],
     "aproximado": false,
     "fecha": "2026-11-17"
+  },
+  {
+    "categoria": "Hardware e historia de la computación",
+    "anio": "1985",
+    "titulo": "Lanzamiento de la computadora Atari 520ST",
+    "texto": "El 18 de noviembre de 1985, Atari lanzó al mercado la 520ST, una computadora personal que marcó un hito al ser una de las primeras en ofrecer una interfaz gráfica de usuario a un precio accesible. Este equipo, apodado 'Jackintosh' por su similitud con el Macintosh, fue fundamental para el desarrollo de la música digital gracias a sus puertos MIDI integrados de serie.",
+    "fuentes": [
+      {
+        "nombre": "Computer History Museum",
+        "url": "https://computerhistory.org/profile/atari-st/"
+      }
+    ],
+    "aproximado": false,
+    "fecha": "2026-11-18"
   }
 ]
