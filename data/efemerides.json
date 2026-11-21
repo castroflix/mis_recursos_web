@@ -1417,5 +1417,19 @@
     ],
     "aproximado": false,
     "fecha": "2026-11-20"
+  },
+  {
+    "categoria": "Hardware e historia de la computación",
+    "anio": "1991",
+    "titulo": "La sonda Mariner 9 alcanza la órbita de Marte",
+    "texto": "El 21 de noviembre de 1971, la sonda Mariner 9 de la NASA se convirtió en la primera nave espacial en orbitar otro planeta, Marte. Este hito tecnológico permitió mapear el 85% de la superficie marciana, enviando datos cruciales que transformaron nuestra comprensión de la geología planetaria y sentaron las bases para futuras misiones robóticas.",
+    "fuentes": [
+      {
+        "nombre": "NASA Solar System Exploration",
+        "url": "https://solarsystem.nasa.gov/missions/mariner-9/in-depth/"
+      }
+    ],
+    "aproximado": false,
+    "fecha": "2026-11-21"
   }
 ]
