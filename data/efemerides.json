@@ -1431,5 +1431,19 @@
     ],
     "aproximado": false,
     "fecha": "2026-11-21"
+  },
+  {
+    "categoria": "Hardware e historia de la computación",
+    "anio": "1995",
+    "titulo": "Lanzamiento de la consola Sega Saturn en Norteamérica",
+    "texto": "El 22 de noviembre de 1995, Sega lanzó oficialmente su consola de 32 bits, la Sega Saturn, en el mercado norteamericano. Este lanzamiento fue notable por haberse adelantado a la fecha prevista inicialmente, buscando ganar terreno frente a la competencia en la era de los videojuegos en 3D.",
+    "fuentes": [
+      {
+        "nombre": "Sega Retro",
+        "url": "https://segaretro.org/Sega_Saturn"
+      }
+    ],
+    "aproximado": false,
+    "fecha": "2026-11-22"
   }
 ]
