@@ -1459,5 +1459,19 @@
     ],
     "aproximado": false,
     "fecha": "2026-11-23"
+  },
+  {
+    "categoria": "Hardware e historia de la computación",
+    "anio": "1998",
+    "titulo": "AOL anuncia la adquisición de Netscape Communications",
+    "texto": "El 24 de noviembre de 1998, America Online (AOL) anunció la compra de Netscape Communications por 4.200 millones de dólares en acciones. Este movimiento estratégico marcó un punto de inflexión clave en la primera gran 'guerra de navegadores' frente al dominio ascendente de Internet Explorer. La transacción terminó impulsando la liberación de su código fuente, lo que más tarde daría lugar a la creación del proyecto Mozilla y el navegador Firefox.",
+    "fuentes": [
+      {
+        "nombre": "Computer History Museum",
+        "url": "https://www.computerhistory.org"
+      }
+    ],
+    "aproximado": false,
+    "fecha": "2026-11-24"
   }
 ]
