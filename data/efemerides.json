@@ -1473,5 +1473,19 @@
     ],
     "aproximado": false,
     "fecha": "2026-11-24"
+  },
+  {
+    "categoria": "Software y aplicaciones",
+    "anio": "1997",
+    "titulo": "Lanzamiento de Netscape Communicator 4.04",
+    "texto": "El 25 de noviembre de 1997, Netscape lanzó la versión 4.04 de su popular suite de Internet, Netscape Communicator. Esta actualización fue clave para mejorar la estabilidad y seguridad del navegador en una época donde la 'guerra de los navegadores' estaba en su punto más álgido frente a Microsoft.",
+    "fuentes": [
+      {
+        "nombre": "Mozilla Developer Network",
+        "url": "https://developer.mozilla.org/en-US/docs/Archive/Mozilla/Netscape_history"
+      }
+    ],
+    "aproximado": false,
+    "fecha": "2026-11-25"
   }
 ]
