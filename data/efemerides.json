@@ -1487,5 +1487,19 @@
     ],
     "aproximado": false,
     "fecha": "2026-11-25"
+  },
+  {
+    "categoria": "Software y aplicaciones",
+    "anio": "1996",
+    "titulo": "Lanzamiento de la versión 3.0 de Netscape Navigator",
+    "texto": "El 26 de noviembre de 1996, Netscape lanzó una actualización importante de su navegador, consolidando su posición como la herramienta líder para navegar por la web en los años 90. Esta versión introdujo mejoras significativas en el soporte de complementos y la integración de funciones multimedia, marcando una etapa clave en la llamada guerra de los navegadores.",
+    "fuentes": [
+      {
+        "nombre": "Netscape Navigator 3.0 Release Notes",
+        "url": "https://developer.mozilla.org/en-US/docs/Archive/Mozilla/Netscape_Navigator_3.0_Release_Notes"
+      }
+    ],
+    "aproximado": false,
+    "fecha": "2026-11-26"
   }
 ]
