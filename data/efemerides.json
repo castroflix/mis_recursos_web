@@ -1515,5 +1515,19 @@
     ],
     "aproximado": false,
     "fecha": "2026-11-27"
+  },
+  {
+    "categoria": "Software y aplicaciones",
+    "anio": "1994",
+    "titulo": "Lanzamiento de la versión 1.0 de Netscape Navigator",
+    "texto": "El 28 de noviembre de 1994, la compañía Netscape Communications lanzó oficialmente la primera versión de su navegador web, Netscape Navigator. Este software revolucionó la experiencia de navegación en internet al introducir características innovadoras como la carga progresiva de imágenes y el soporte para cookies, convirtiéndose rápidamente en el estándar de la industria durante la década de los 90.",
+    "fuentes": [
+      {
+        "nombre": "Netscape Navigator History",
+        "url": "https://www.computerhistory.org/timeline/1994/"
+      }
+    ],
+    "aproximado": false,
+    "fecha": "2026-11-28"
   }
 ]
